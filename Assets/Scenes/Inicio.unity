@@ -1405,7 +1405,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1794356979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1835151339}
+        m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: selec_personaje
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1794356979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1576,6 +1588,7 @@ GameObject:
   - component: {fileID: 1835151336}
   - component: {fileID: 1835151338}
   - component: {fileID: 1835151337}
+  - component: {fileID: 1835151339}
   m_Layer: 5
   m_Name: PanelInicio
   m_TagString: Untagged
@@ -1654,6 +1667,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835151335}
   m_CullTransparentMesh: 1
+--- !u!114 &1835151339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835151335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e8911e78f5bfa49908cfc8797dc89f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1918161779
 GameObject:
   m_ObjectHideFlags: 0
