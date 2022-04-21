@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/selec_personaje.unity
     guid: 5e41e41307e4bc748802a84ffa0a3485
+  - enabled: 1
+    path: Assets/Scenes/ciudad.unity
+    guid: 1d9fde840c8dba244900dfecd40c313e
+  - enabled: 1
+    path: Assets/Scenes/Setting.unity
+    guid: 895383df5ea765e448cd467a4cf4aafd
   m_configObjects: {}
