@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Networking;
 // Autores: Jose Luis Madrigal, Erika Marlene Garcia, Cesar Emiliano Palome, Jose Angel Garcia
-// Clase para hacer conexion web con unity para registrar datos
+// Clase para hacer conexion web con unity para registrar datos ingresados
 
 public class RegistrarDatos : MonoBehaviour
 {

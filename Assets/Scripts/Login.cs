@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Networking;
-// Autor: Jose Luis Madrigal
-// Clase para hacer conexion web con unity para login
+// Autores: Jose Luis Madrigal, Erika Marlene Garcia, Cesar Emiliano Palome, Jose Angel Garcia
+// Clase para hacer conexion web con unity para mandar datos igresados en login 
 public class Login : MonoBehaviour
 {
     public TextMeshProUGUI resultado;
