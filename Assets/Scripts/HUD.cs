@@ -26,4 +26,10 @@ public class HUD : MonoBehaviour
         SceneManager.LoadScene("Setting");
         // Investigar como descargar la escena actual
     }
+
+    public void Reanudar()
+    {
+        MenuPausa.instance.Pausar();
+    }
+
 }
