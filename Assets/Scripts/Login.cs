@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 // Autores: Jose Luis Madrigal, Erika Marlene Garcia, Cesar Emiliano Palome, Jose Angel Garcia
 // Clase para hacer conexion web con unity para mandar datos igresados en login 
 public class Login : MonoBehaviour
@@ -41,5 +42,11 @@ public class Login : MonoBehaviour
         {
             resultado.text = "Error: " + request.ToString();
         }
+    }
+
+    public void registrar()
+    {
+        SceneManager.LoadScene("RegistroDatos");
+        // Investigar como descargar la escena actual
     }
 }
