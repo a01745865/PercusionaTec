@@ -11,6 +11,7 @@ public class RegistrarDatos : MonoBehaviour
     public TextMeshProUGUI resultado;
 
     //Los datos de entrada
+    public TMP_InputField textoUsuario;
     public TMP_InputField textoNombre;
     public TMP_InputField textoCiudad;
     public TMP_InputField textoMail;
@@ -27,6 +28,7 @@ public class RegistrarDatos : MonoBehaviour
     private IEnumerator SubirDatos()
     {
         //Recuperar los datos
+        string usuario = textoUsuario.text;
         string nombre = textoNombre.text;
         string ciudad = textoCiudad.text;
         string mail = textoMail.text;
@@ -35,6 +37,7 @@ public class RegistrarDatos : MonoBehaviour
         string nacionalidad = textoNacionalidad.text;
         //Crear un objeto con los datos
         WWWForm forma = new WWWForm();
+        forma.AddField("usuario", usuario);
         forma.AddField("nombre", nombre);
         forma.AddField("ciudad", ciudad);
         forma.AddField("mail", mail);

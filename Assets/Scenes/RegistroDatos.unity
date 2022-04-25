@@ -5403,6 +5403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resultado: {fileID: 1256919194}
+  textoUsuario: {fileID: 1685853256}
   textoNombre: {fileID: 1807228569}
   textoCiudad: {fileID: 1246648387}
   textoMail: {fileID: 523808212}
