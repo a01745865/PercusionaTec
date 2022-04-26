@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Manos : MonoBehaviour
+public class ManoIzq : MonoBehaviour
 {
 
     //Animator
@@ -19,8 +19,7 @@ public class Manos : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
-        audioSource.Stop();
+
     }
 
     private void Update()
@@ -28,13 +27,13 @@ public class Manos : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             sonido = true;
-            audioSource.Play(0);
+
         }
 
         if (!audioSource.isPlaying)
         {
             sonido = false;
-            audioSource.Stop();
+            //audioSource.Stop();
         }
     }
 
