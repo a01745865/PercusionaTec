@@ -345,6 +345,8 @@ GameObject:
   - component: {fileID: 467728373}
   - component: {fileID: 467728372}
   - component: {fileID: 467728371}
+  - component: {fileID: 467728375}
+  - component: {fileID: 467728376}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -437,6 +439,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &467728375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467728370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9152796f8b93934eb8b52490000c8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &467728376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467728370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e8911e78f5bfa49908cfc8797dc89f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &869607184
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +489,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869607184}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -520,7 +546,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 869607187}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 467728375}
+        m_TargetAssemblyTypeName: ElegirPersonaje, Assembly-CSharp
+        m_MethodName: EstablecerEleccion
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: dino
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 467728376}
+        m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ciudad
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &869607187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,7 +692,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 946130868}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 467728375}
+        m_TargetAssemblyTypeName: ElegirPersonaje, Assembly-CSharp
+        m_MethodName: EstablecerEleccion
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: chica
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 467728376}
+        m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ciudad
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &946130868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,7 +1078,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1255240704}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 467728375}
+        m_TargetAssemblyTypeName: ElegirPersonaje, Assembly-CSharp
+        m_MethodName: EstablecerEleccion
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: chico
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 467728376}
+        m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ciudad
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1255240704
 MonoBehaviour:
   m_ObjectHideFlags: 0
