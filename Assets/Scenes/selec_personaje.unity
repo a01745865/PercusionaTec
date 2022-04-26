@@ -345,8 +345,8 @@ GameObject:
   - component: {fileID: 467728373}
   - component: {fileID: 467728372}
   - component: {fileID: 467728371}
-  - component: {fileID: 467728375}
   - component: {fileID: 467728376}
+  - component: {fileID: 467728377}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -439,18 +439,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &467728375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 467728370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9152796f8b93934eb8b52490000c8a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &467728376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,6 +451,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e8911e78f5bfa49908cfc8797dc89f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &467728377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467728370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9152796f8b93934eb8b52490000c8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eleccion: 0
 --- !u!1 &869607184
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +548,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 467728375}
+      - m_Target: {fileID: 467728377}
         m_TargetAssemblyTypeName: ElegirPersonaje, Assembly-CSharp
         m_MethodName: EstablecerEleccion
         m_Mode: 5
@@ -693,7 +694,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 467728375}
+      - m_Target: {fileID: 467728377}
         m_TargetAssemblyTypeName: ElegirPersonaje, Assembly-CSharp
         m_MethodName: EstablecerEleccion
         m_Mode: 5
@@ -1079,7 +1080,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 467728375}
+      - m_Target: {fileID: 467728377}
         m_TargetAssemblyTypeName: ElegirPersonaje, Assembly-CSharp
         m_MethodName: EstablecerEleccion
         m_Mode: 5

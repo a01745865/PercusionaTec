@@ -4,21 +4,27 @@ using UnityEngine;
 
 public class ElegirPersonaje : MonoBehaviour
 {
-    private int eleccion;
-    
+    public int eleccion;
+    public static ElegirPersonaje instancia;
+    public void Awake()
+    {
+        instancia = this;
+    }
+
     public void EstablecerEleccion(string nombrePersonaje)
     {
-        if(nombrePersonaje == "chica")
+        if (nombrePersonaje == "chica")
         {
             eleccion = 1;
         }
-        else if(nombrePersonaje == "dino")
+        else if (nombrePersonaje == "dino")
         {
             eleccion = 2;
         }
-        else
+        else 
         {
             eleccion = 3;
         }
     }
+
 }
