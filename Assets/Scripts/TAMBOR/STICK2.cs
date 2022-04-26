@@ -2,51 +2,58 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class STICK : MonoBehaviour
+public class STICK2 : MonoBehaviour
 {
 
     //Animator
     private Animator animator;
 
     //Para el animator
-    bool sonido = false;
+    public bool sonido = false;
+    public bool accion = false;
 
-    //IsPlaying
-    public AudioClip otherClip;
-    AudioSource audioSource;
-   
+    public GameObject SonidoCompleto;
+    public GameObject SonidoAccion;
 
+    public static STICK2 instancia;
+
+    void Awake()
+    {
+        instancia = this;
+    }
     void Start()
     {
         animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
-        audioSource.Stop();
+       
     }
 
     private void Update()
     {
+       
         if (Input.GetKeyDown(KeyCode.S))
         {
             sonido = true;
-            audioSource.Play(0);
+            Instantiate(SonidoCompleto);
+
         }
 
-        if (!audioSource.isPlaying)
+
+        if (Input.GetKeyDown(KeyCode.D))
         {
-            sonido = false;
+            accion = true;
+            Instantiate(SonidoAccion);
 
         }
 
-        
 
     }
 
     private void FixedUpdate()
     {
         //Animator
-        
+
         animator.SetBool("sonido", sonido);
-        
+        animator.SetBool("accion", accion);
     }
 
 
