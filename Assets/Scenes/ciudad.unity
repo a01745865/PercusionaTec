@@ -2848,6 +2848,7 @@ GameObject:
   - component: {fileID: 1855469441}
   - component: {fileID: 1855469442}
   - component: {fileID: 1855469443}
+  - component: {fileID: 1855469444}
   m_Layer: 0
   m_Name: chico
   m_TagString: Untagged
@@ -2932,7 +2933,7 @@ Animator:
   m_GameObject: {fileID: 1855469438}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f91da78f293371447ab957731da948de, type: 2}
+  m_Controller: {fileID: 9100000, guid: aa0e9dd2224508349a542d88fbfa9c22, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2950,7 +2951,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855469438}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2977,6 +2978,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadX: 10
   velocidadY: 10
+--- !u!61 &1855469444
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855469438}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.5, y: 12.8125}
+    newSize: {x: 9.5, y: 12.8125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.5, y: 12.8125}
+  m_EdgeRadius: 0
 --- !u!1 &1992762033
 GameObject:
   m_ObjectHideFlags: 0
@@ -3186,7 +3213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2070466243
 SpriteRenderer:
   m_ObjectHideFlags: 0
