@@ -41,8 +41,14 @@ public class ManoIzq : MonoBehaviour
         {
             sonido = false;
             //audioSource.Stop();
+            if (visibilidadMano == false)
+            {
+                gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
     }
+    
 
     private void FixedUpdate()
     {
