@@ -35,6 +35,7 @@ public class ManoIzq : MonoBehaviour
         {
             sonido = true;
             audioSource.Play(0);
+            visibilidadMano = false;
         }
 
         if (!audioSource.isPlaying)
