@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class cambionivel : MonoBehaviour
@@ -18,14 +19,14 @@ public class cambionivel : MonoBehaviour
     public int i = 0;
 
     public string[] patron;
-    
+
 
     void Start()
     {
 
 
         patron = new string[10];
-        patron[0]= ("S");
+        patron[0] = ("S");
         patron[1] = ("A");
         patron[2] = ("D");
         patron[3] = ("A");
@@ -38,7 +39,7 @@ public class cambionivel : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            if(patron[i] == "A")
+            if (patron[i] == "A")
             {
                 puntos = puntos + 1;
                 txtPuntos.text = puntos.ToString();
@@ -58,6 +59,11 @@ public class cambionivel : MonoBehaviour
                 puntos = puntos + 1;
                 txtPuntos.text = puntos.ToString();
                 i = i + 1;
+                if (i > 4)
+                {
+                    esperarscene();
+                }
+
             }
             else
             {
@@ -72,5 +78,18 @@ public class cambionivel : MonoBehaviour
                 i = i + 1;
             }
         }
+
+    }
+
+    void esperarscene()
+    {
+        StartCoroutine(next_scene());
+    }
+
+    private IEnumerator next_scene()
+    {
+        yield return new WaitForSeconds(2f);
+
+        SceneManager.LoadScene("NivelExitoso");
     }
 }
