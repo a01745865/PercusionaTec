@@ -29,19 +29,35 @@ public class control_Nivel : MonoBehaviour
         //Pasas Nivel
         
         
-            if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            puntos = puntos + 1;
+            txtPuntos.text = puntos.ToString();
+            if (Input.GetKeyDown(KeyCode.A))
             {
                 puntos = puntos + 1;
                 txtPuntos.text = puntos.ToString();
+                print("SEGUNDA NOTA");
+
             }
-            else if(Input.GetKeyDown(KeyCode.A))
+            else if (Input.GetKeyDown(KeyCode.D))
             {
 
                 errores = errores + 1;
                 txtErrores.text = errores.ToString();
-               
+                print("SEGUNDA NOTA MALA");
 
-           }
+
+            }
+        }
+        else if(Input.GetKeyDown(KeyCode.A))
+        {
+
+            errores = errores + 1;
+            txtErrores.text = errores.ToString();
+            print("Primera NOTA mala");
+
+        }
 
 
 

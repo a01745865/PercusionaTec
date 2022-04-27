@@ -1307,7 +1307,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8979619642186294696, guid: c4565013c0db54ef190e56c25f0f1c80, type: 3}
   m_PrefabInstance: {fileID: 860549819}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1661924785
+--- !u!114 &1661924790
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1316,13 +1316,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1661924780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f27efe7671fc744685556434c8d7ff9, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bf8e2c800c64df4f8e7b9ab1c259246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   errores: 0
-  pasas: 0
+  puntos: 0
   txtPuntos: {fileID: 825582776}
   txtErrores: {fileID: 200822689}
+  i: 0
+  patron: []
 --- !u!1001 &1662012373
 PrefabInstance:
   m_ObjectHideFlags: 0
