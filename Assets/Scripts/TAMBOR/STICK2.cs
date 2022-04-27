@@ -4,46 +4,40 @@ using UnityEngine;
 
 public class STICK2 : MonoBehaviour
 {
-
-    //Animator
+   //Animator
     private Animator animator;
 
     //Para el animator
-    public bool sonido = false;
     public bool accion = false;
 
-    public GameObject SonidoCompleto;
-    public GameObject SonidoAccion;
+    //IsPlaying
+    public AudioClip otherClip;
+    AudioSource audioSource;
 
-    public static STICK2 instancia;
+   
 
-    void Awake()
-    {
-        instancia = this;
-    }
     void Start()
     {
         animator = GetComponent<Animator>();
-       
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Stop();
     }
 
     private void Update()
     {
-       
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            sonido = true;
-            Instantiate(SonidoCompleto);
-
-        }
-
-
         if (Input.GetKeyDown(KeyCode.D))
         {
             accion = true;
-            Instantiate(SonidoAccion);
-
+            audioSource.Play(0);
+         
         }
+
+        if (!audioSource.isPlaying)
+        {
+            accion = false;
+            
+        }
+
 
 
     }
@@ -52,9 +46,6 @@ public class STICK2 : MonoBehaviour
     {
         //Animator
 
-        animator.SetBool("sonido", sonido);
         animator.SetBool("accion", accion);
     }
-
-
 }

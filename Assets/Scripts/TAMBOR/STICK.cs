@@ -17,7 +17,8 @@ public class STICK : MonoBehaviour
     //IsPlaying
     public AudioClip otherClip;
     AudioSource audioSource;
-   
+
+    public bool visibilidadStick = true;
 
     void Start()
     {
@@ -32,12 +33,18 @@ public class STICK : MonoBehaviour
         {
             sonido = true;
             audioSource.Play(0);
+            visibilidadStick = false;
         }
 
         if (!audioSource.isPlaying)
         {
             sonido = false;
-
+            //audioSource.Stop();
+            if (visibilidadStick == false)
+            {
+                gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
 
         

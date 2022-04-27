@@ -8,35 +8,36 @@ public class STICK3 : MonoBehaviour
     private Animator animator;
 
     //Para el animator
-    bool sonido = false;
     bool accion = false;
 
-    public GameObject SonidoCompleto;
-    public GameObject SonidoAccion;
+    //IsPlaying
+    public AudioClip otherClip;
+    AudioSource audioSource;
 
+    
 
     void Start()
     {
         animator = GetComponent<Animator>();
-
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Stop();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            sonido = true;
-            Instantiate(SonidoCompleto);
-
-        }
-
-
         if (Input.GetKeyDown(KeyCode.A))
         {
             accion = true;
-            Instantiate(SonidoAccion);
-
+            audioSource.Play(0);
+           
         }
+
+        if (!audioSource.isPlaying)
+        {
+            accion = false;
+            
+        }
+
 
 
     }
@@ -45,9 +46,6 @@ public class STICK3 : MonoBehaviour
     {
         //Animator
 
-        animator.SetBool("sonido", sonido);
         animator.SetBool("accion", accion);
-
     }
-
 }
