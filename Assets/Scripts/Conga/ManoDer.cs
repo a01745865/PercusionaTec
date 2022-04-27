@@ -2,18 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Script que borra una mano transcurrida la música y pone otra
+ * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
+ */
 public class ManoDer : MonoBehaviour
 {
+    [SerializeField]
 
     //Animator
     private Animator animator;
 
     //Para el animator
-    bool sonido = false;
+    public bool sonido = false;
 
     //IsPlaying
     public AudioClip otherClip;
     AudioSource audioSource;
+
+
+    public bool visibilidadMano = true;
 
 
     void Start()
@@ -29,12 +37,18 @@ public class ManoDer : MonoBehaviour
         {
             sonido = true;
             audioSource.Play(0);
+            visibilidadMano = false;
         }
 
         if (!audioSource.isPlaying)
         {
             sonido = false;
             //audioSource.Stop();
+            if (visibilidadMano == false)
+            {
+                gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
     }
 
@@ -45,6 +59,7 @@ public class ManoDer : MonoBehaviour
         animator.SetBool("sonido", sonido);
 
     }
+
 
 
 }
