@@ -61,7 +61,7 @@ public class DialogoRobot : MonoBehaviour
         }
         else
         {
-            texto.text = "Now your adventure in the world of percussion begins!!!";
+            texto.text = "Now you can continue to your adventure in the world of percussion!!!";
             botonContinuar.SetActive(false);
             botonSalir.SetActive(true);
         }
