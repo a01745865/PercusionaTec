@@ -21,7 +21,7 @@ public class CambioEscena : MonoBehaviour
 
     public void LoadSceneTambor()
     {
-        SceneManager.LoadScene("Tambor");
+        SceneManager.LoadScene("ExplicacionTambor");
     }
 
     public void LoadSceneConga()

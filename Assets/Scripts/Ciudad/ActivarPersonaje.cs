@@ -11,7 +11,8 @@ public class ActivarPersonaje : MonoBehaviour
 
     void Start()
     {
-        int eleccion = ElegirPersonaje.instancia.eleccion;
+        //int eleccion = ElegirPersonaje.instancia.eleccion;
+        int eleccion = PlayerPrefs.GetInt("eleccion");
         if(eleccion == 1)
         {
             chica.SetActive(true);

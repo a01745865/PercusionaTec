@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Xilofono/ExplicacionXilofono.unity
     guid: 3ae05e7088eaa004e95b81d4a5ddd02e
+  - enabled: 1
+    path: Assets/Scenes/Tambor/ExplicacionTambor.unity
+    guid: e88dfe5142fa6fb4b9cd67cc9ba7d391
   m_configObjects: {}

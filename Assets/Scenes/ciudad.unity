@@ -996,19 +996,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6916296983858983521, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
   m_PrefabInstance: {fileID: 6916296983963051909}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &688690661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688690655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77276ecb00e07d4469a5757886c93857, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiempoConecta: 
 --- !u!114 &688690662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3644,6 +3631,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6916296982719992723, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916296982719992723, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
+    - target: {fileID: 6916296982719992723, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916296982719992723, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8690752672722878335, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
     - target: {fileID: 6916296983858983521, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_Name
       value: CanvasDialogo

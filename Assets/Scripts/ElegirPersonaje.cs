@@ -25,6 +25,7 @@ public class ElegirPersonaje : MonoBehaviour
         {
             eleccion = 3;
         }
+        PlayerPrefs.SetInt("eleccion", eleccion);
     }
 
 }
