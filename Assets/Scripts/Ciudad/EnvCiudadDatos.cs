@@ -8,6 +8,7 @@ public class EnvCiudadDatos : MonoBehaviour
     public string HoraInicio;
     public string HoraFin;
     public string usuario;
+    public string id_partida;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,34 +30,14 @@ public class EnvCiudadDatos : MonoBehaviour
         HoraInicio = PlayerPrefs.GetString("hora_conecta_partida");
         HoraFin = DatosTermino.instancia.HoraTermino;
         usuario = PlayerPrefs.GetString("usuario");
-        print(HoraInicio);
-        print(HoraFin);
-        print(usuario);
-        WWWForm formaPartida = new WWWForm();
-        formaPartida.AddField("usuario", usuario);
-        formaPartida.AddField("inicio", HoraInicio);
-        formaPartida.AddField("fin", HoraFin);
-        string URLDatosPartida = "localhost:3000/partidas/";
-        UnityWebRequest request = UnityWebRequest.Post(URLDatosPartida, formaPartida);
+        id_partida = PlayerPrefs.GetString("idPartida");
+        //Crear un objeto con los datos
+        WWWForm formaDatosTermino = new WWWForm();
+        formaDatosTermino.AddField("usuario", usuario);
+        formaDatosTermino.AddField("horaTermino", HoraFin);
+
+        string URLactualizarHoraTermino = "http://localhost:3000/partidas/" + id_partida;
+        UnityWebRequest request = UnityWebRequest.Post(URLactualizarHoraTermino, formaDatosTermino);
         yield return request.SendWebRequest();
-        if (request.result == UnityWebRequest.Result.Success)
-        {
-            string URLobtenerIdPartida = "localhost:3000/" + usuario + "/" + HoraInicio;
-            UnityWebRequest requestId = UnityWebRequest.Get(URLobtenerIdPartida);
-            yield return requestId.SendWebRequest();
-            if(requestId.result == UnityWebRequest.Result.Success)
-            {
-                string texto = requestId.downloadHandler.text;
-                print(texto);
-            }
-            else
-            {
-                print("No se encoontró la partida ingresada");
-            }
-        }
-        else
-        {
-            print("No se ingreso nada");
-        }
     }
 }

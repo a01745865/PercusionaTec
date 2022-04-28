@@ -17,7 +17,7 @@ public class HUD : MonoBehaviour
 
     public void Salir()
     {
-        SceneManager.LoadScene("Inicio");
+        SceneManager.LoadScene("Log-In");
         // Investigar como descargar la escena actual
     }
 
