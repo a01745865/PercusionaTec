@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NivelExitoso.unity
     guid: 24f2df00616244d49a61dd8b2ab8f69c
+  - enabled: 1
+    path: Assets/Scenes/Tambor2.unity
+    guid: c79cf80d3c6859d468ca8f62406d5f2a
   m_configObjects: {}
