@@ -4,15 +4,44 @@ using UnityEngine;
 
 public class ManoDer2 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //Animator
+    private Animator animator;
+
+    //Para el animator
+    public bool accion = false;
+
+    //IsPlaying
+    public AudioClip otherClip;
+    AudioSource audioSource;
+
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Stop();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            accion = true;
+            audioSource.Play(0);
+
+        }
+
+        if (!audioSource.isPlaying)
+        {
+            accion = false;
+
+        }
+
+    }
+
+    private void FixedUpdate()
+    {
+        //Animator
+
+        animator.SetBool("accion", accion);
     }
 }
