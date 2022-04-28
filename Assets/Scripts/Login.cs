@@ -38,7 +38,6 @@ public class Login : MonoBehaviour
             string id_usuario = request.downloadHandler.text; ;
             PlayerPrefs.SetString("usuario", id_usuario);
             PlayerPrefs.Save(); 
-
             SceneManager.LoadScene("Inicio");
         }
         else

@@ -7,15 +7,17 @@ public class CiudadDatos : MonoBehaviour
 {
     public static CiudadDatos instancia;
     public string tiempoConecta;
-    public DateTime tiempoDesconecta;
-    
+
+    //"MM/dd/yyyy HH:mm"
     // Start is called before the first frame update
     void Start()
     {
-        //tiempoConecta = dateOnly.ToString("MM/dd/yyyy HH:mm");
-        //print(tiempoConecta);
+        tiempoConecta = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
     }
-
+    void Awake()
+    {
+        instancia = this;
+    }
     // Update is called once per frame
     void Update()
     {
