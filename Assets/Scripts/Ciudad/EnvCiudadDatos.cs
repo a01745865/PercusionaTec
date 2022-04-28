@@ -41,8 +41,18 @@ public class EnvCiudadDatos : MonoBehaviour
         yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.Success)
         {
-            string texto = request.downloadHandler.text;
-            print(texto);
+            string URLobtenerIdPartida = "localhost:3000/" + usuario + "/" + HoraInicio;
+            UnityWebRequest requestId = UnityWebRequest.Get(URLobtenerIdPartida);
+            yield return requestId.SendWebRequest();
+            if(requestId.result == UnityWebRequest.Result.Success)
+            {
+                string texto = requestId.downloadHandler.text;
+                print(texto);
+            }
+            else
+            {
+                print("No se encoontró la partida ingresada");
+            }
         }
         else
         {

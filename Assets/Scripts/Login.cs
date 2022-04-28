@@ -10,8 +10,6 @@ public class Login : MonoBehaviour
 {
     public TextMeshProUGUI resultado;
 
-    //Hora de conexion a la partida
-    public string tiempoConecta;
 
 
     //Los datos de entrada
@@ -45,11 +43,26 @@ public class Login : MonoBehaviour
             PlayerPrefs.Save();
             
             //Se guarda la hora en que el log in fue aceptado
-            tiempoConecta = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            string tiempoConecta = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             PlayerPrefs.SetString("hora_conecta_partida", tiempoConecta);
             PlayerPrefs.Save();
 
-            SceneManager.LoadScene("Inicio");
+            //Mandar los datos de cuando se conecta y usuario
+            WWWForm formaConecta = new WWWForm();
+            formaConecta.AddField("usuarioConecta", usuario);
+            formaConecta.AddField("tiempoConecta", tiempoConecta);
+
+            string URLDatosConectaPartida = "http://localhost:3000/partidas";
+            UnityWebRequest requestConecta = UnityWebRequest.Post(URLDatosConectaPartida,formaConecta);
+            yield return requestConecta.SendWebRequest();
+            if (requestConecta.result == UnityWebRequest.Result.Success)
+            {
+                SceneManager.LoadScene("Inicio");
+            }
+            else
+            {
+                print("No se pudo registrar el inicio de partida");
+            }
         }
         else
         {
