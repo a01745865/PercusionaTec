@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 /*
- * Script que detecta la secuencia correcta
+ * Script que detecta la secuencia correcta del tambor
  * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
  */
 public class cambionivel : MonoBehaviour
