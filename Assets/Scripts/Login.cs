@@ -57,7 +57,21 @@ public class Login : MonoBehaviour
             yield return requestConecta.SendWebRequest();
             if (requestConecta.result == UnityWebRequest.Result.Success)
             {
-                SceneManager.LoadScene("Inicio");
+                //Se requiere obtener el Id partida que se ingresó
+                string URLIdPartida = "http://localhost:3000/partidas/" + usuario + "/" + tiempoConecta;
+                UnityWebRequest requestIdPartida = UnityWebRequest.Get(URLIdPartida);
+                yield return requestIdPartida.SendWebRequest();
+                if (requestIdPartida.result == UnityWebRequest.Result.Success)
+                {
+                    string id_partida = requestIdPartida.downloadHandler.text;
+                    PlayerPrefs.SetString("idPartida", id_partida);
+                    PlayerPrefs.Save();
+                }
+                else
+                {
+                    print("no se pudo obtener el id partida");
+                }
+                    SceneManager.LoadScene("Inicio");
             }
             else
             {
