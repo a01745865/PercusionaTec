@@ -21,6 +21,7 @@ public class MARACA : MonoBehaviour
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         audioSource.Stop();
+        animator.SetBool("sonido", sonido);
     }
 
     private void Update()
