@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 /*
  * Script que detecta la secuencia correcta del tambor
  * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
@@ -18,6 +19,8 @@ public class cambionivel : MonoBehaviour
     public TextMeshProUGUI txtPuntos;
     public TextMeshProUGUI txtErrores;
 
+    //Se guarda el tiempo en que inicia el intento
+    public string inicio;
 
     public int i = 0;
 
@@ -90,6 +93,10 @@ public class cambionivel : MonoBehaviour
             if (patron[i] == "S")
             {
                 i = i + 1;
+                inicio = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                PlayerPrefs.SetString("inicio_intento", inicio);
+                PlayerPrefs.Save();
+                print(inicio);
             }
         }
 
