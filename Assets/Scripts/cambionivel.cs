@@ -4,7 +4,10 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+/*
+ * Script que detecta la secuencia correcta
+ * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
+ */
 public class cambionivel : MonoBehaviour
 {
     public static control_Nivel instance;
