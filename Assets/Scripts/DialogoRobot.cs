@@ -7,10 +7,9 @@ public class DialogoRobot : MonoBehaviour
 {
     public TextMeshProUGUI texto;
 
-    [TextArea (3,30)]
+    [TextArea (4,40)]
     public string[] parrafos;
     int index = 0;
-    int cont = 0;
     public float velParrafo;
 
     public GameObject botonContinuar;
@@ -18,6 +17,8 @@ public class DialogoRobot : MonoBehaviour
 
     public GameObject panelDialogo;
     public GameObject botonLeer;
+
+    public GameObject botonIncial;
 
 
     // Start is called before the first frame update
@@ -56,6 +57,7 @@ public class DialogoRobot : MonoBehaviour
             index++;
             texto.text = "";
             mostrarTexto();
+            //StartCoroutine(textoDialogo());
         }
         else
         {
@@ -65,22 +67,12 @@ public class DialogoRobot : MonoBehaviour
         }
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            botonLeer.SetActive(true);
-            print("Colision");
-        }
-        else
-        {
-            botonLeer.SetActive(false);
-        }
-    }*/
 
     public void empezarDialogo()
     {
         botonLeer.SetActive(true);
+        Time.timeScale = true ? 0 : 1;
+        botonIncial.SetActive(false);
     }
 
     public void activarBotonLeer()
@@ -89,6 +81,7 @@ public class DialogoRobot : MonoBehaviour
         botonContinuar.SetActive(true);
         botonLeer.SetActive(false);
         mostrarTexto();
+        //StartCoroutine(textoDialogo());
     }
 
     public void botonCerrar()
@@ -96,5 +89,8 @@ public class DialogoRobot : MonoBehaviour
         panelDialogo.SetActive(false);
         botonSalir.SetActive(false);
         index = 0;
+        Time.timeScale = false ? 0 : 1;
+        texto.text = "";
+        botonIncial.SetActive(true);
     }
 }
