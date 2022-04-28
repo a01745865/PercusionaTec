@@ -10,9 +10,20 @@ public class CambioEscena : MonoBehaviour
     {
         SceneManager.LoadScene("ciudad");
     }
-    public void LoadSceneScores()
+
+    public void LoadSceneCiudad2()
     {
-        SceneManager.LoadScene("ciudad");
+        SceneManager.LoadScene("ciudad 2");
+    }
+
+    public void LoadSceneCiudad3()
+    {
+        SceneManager.LoadScene("ciudad3");
+    }
+
+    public void LoadSceneCiudad4()
+    {
+        SceneManager.LoadScene("ciudad4");
     }
     public void LoadSceneOptions()
     {
