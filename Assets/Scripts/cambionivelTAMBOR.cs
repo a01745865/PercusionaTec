@@ -12,12 +12,13 @@ public class cambionivelTAMBOR : MonoBehaviour
 {
     public static cambionivelTAMBOR instance;
 
-    public int errores = 0;
-    public int puntos = 0;
+    
 
     public TextMeshProUGUI txtPuntos;
     public TextMeshProUGUI txtErrores;
-
+   
+    public int errores =  0;
+    public int puntos = 0;
 
     public int i = 0;
 
@@ -26,7 +27,8 @@ public class cambionivelTAMBOR : MonoBehaviour
 
     void Start()
     {
-
+       errores = PlayerPrefs.GetInt("errores");
+        puntos = PlayerPrefs.GetInt("puntos");
 
         patron = new string[10];
         patron[0] = ("S");
@@ -36,8 +38,12 @@ public class cambionivelTAMBOR : MonoBehaviour
         patron[4] = ("D");
         patron[5] = ("A");
         patron[6] = ("D");
+        txtPuntos.text = puntos.ToString();
+        txtErrores.text = errores.ToString();
+
     }
 
+    
 
     // Update is called once per frame
     void Update()
@@ -66,7 +72,9 @@ public class cambionivelTAMBOR : MonoBehaviour
                 i = i + 1;
                 if (i > 6)
                 {
-                        esperarscene();
+                    
+                      
+                    esperarscene();
                 }
 
             }

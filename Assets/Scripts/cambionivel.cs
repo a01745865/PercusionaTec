@@ -38,6 +38,10 @@ public class cambionivel : MonoBehaviour
         patron[6] = ("D");
         patron[7] = ("A");
         patron[8] = ("D");
+        PlayerPrefs.SetInt("puntos", puntos);
+        PlayerPrefs.SetInt("errores", errores);
+        txtPuntos.text = puntos.ToString();
+        txtErrores.text = errores.ToString();
     }
 
 
@@ -68,7 +72,10 @@ public class cambionivel : MonoBehaviour
                 i = i + 1;
                 if (i > 8)
                 {
-                        esperarscene();
+                    PlayerPrefs.SetInt("puntos", puntos);
+                    PlayerPrefs.SetInt("errores", errores);
+                    PlayerPrefs.Save(); // Escribe en Disco     
+                    esperarscene();
                 }
 
             }

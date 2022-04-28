@@ -18,4 +18,9 @@ public class CambioEscena : MonoBehaviour
     {
         SceneManager.LoadScene("Setting");
     }
+
+    public void LoadSceneTambor()
+    {
+        SceneManager.LoadScene("Tambor");
+    }
 }
