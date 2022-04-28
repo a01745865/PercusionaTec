@@ -48,17 +48,28 @@ public class RegistrarDatos : MonoBehaviour
     forma.AddField("fechaNaci", fechaNaci);
     forma.AddField("nacionalidad", nacionalidad);
 
-    UnityWebRequest request = UnityWebRequest.Post("link de api hecha con lo de marciano", forma);
-    yield return request.SendWebRequest();
+    string URLverificaJugador = "localhost:3000/jugador/"+usuario;
+    UnityWebRequest requestVerif = UnityWebRequest.Get(URLverificaJugador);
+    yield return requestVerif.SendWebRequest();
     //....despues de cierto tiempo
-    if (request.result == UnityWebRequest.Result.Success)
+    if (!(requestVerif.result == UnityWebRequest.Result.Success))
     {
-        string texto = request.downloadHandler.text;
-        resultado.text = texto;
+        string URLregistroJugador = "localhost:3000/jugador/";
+        UnityWebRequest requestRegistro = UnityWebRequest.Post(URLregistroJugador, forma);
+        yield return requestRegistro.SendWebRequest();
+        if (requestRegistro.result == UnityWebRequest.Result.Success)
+        {
+            string texto = requestRegistro.downloadHandler.text;
+            resultado.text = texto;
+        }
+        else
+        {
+            resultado.text = "Error al ingresar datos";
+        }
     }
     else
     {
-        resultado.text = "Error: " + request.ToString();
+        resultado.text = "Error, el usuario ya está registrado ";
     }
     }  
 
