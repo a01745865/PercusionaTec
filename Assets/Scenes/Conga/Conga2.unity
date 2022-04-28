@@ -245,7 +245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: S-Escuchar la secuencia
+  m_text: S- To play the sequence you will learn
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
   m_sharedMaterial: {fileID: -8690752672722878335, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
@@ -339,7 +339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -761.00024, y: -434.08002}
+  m_AnchoredPosition: {x: -732, y: -434.08002}
   m_SizeDelta: {x: 378.194, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &505248979
@@ -426,6 +426,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &561702624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8979619642445623766, guid: c4565013c0db54ef190e56c25f0f1c80, type: 3}
+  m_PrefabInstance: {fileID: 581099290}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &581099290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -868,9 +879,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Felicidades por pasar la secuencia pasada
-
-    Ahora intentemos otra.'
+  m_text: Congratulations in achieving the previous sequence. Now lets try another
+    one!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
   m_sharedMaterial: {fileID: -8690752672722878335, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
@@ -1891,3 +1901,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1781344780 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8979619642512650580, guid: c4565013c0db54ef190e56c25f0f1c80, type: 3}
+  m_PrefabInstance: {fileID: 581099290}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2012800784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8979619642186294696, guid: c4565013c0db54ef190e56c25f0f1c80, type: 3}
+  m_PrefabInstance: {fileID: 581099290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2012800789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012800784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f4df3f2121b415081cbfaf8c5e4920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  errores: 0
+  puntos: 0
+  txtPuntos: {fileID: 1781344780}
+  txtErrores: {fileID: 561702624}
+  i: 0
+  patron: []
