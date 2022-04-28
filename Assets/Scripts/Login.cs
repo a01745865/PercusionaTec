@@ -29,18 +29,17 @@ public class Login : MonoBehaviour
         WWWForm forma = new WWWForm();
         forma.AddField("usuario", usuario);
         forma.AddField("contrasena", contrasena);
-
-        UnityWebRequest request = UnityWebRequest.Post("link de api hecha con lo de marciano", forma);
+        string URLinicioSesion = "localhost:3000/jugador/" + usuario + "/" + contrasena;
+        UnityWebRequest request = UnityWebRequest.Get(URLinicioSesion);
         yield return request.SendWebRequest();
         //....despues de cierto tiempo
         if (request.result == UnityWebRequest.Result.Success)
         {
-            string texto = request.downloadHandler.text;
-            resultado.text = texto;
+            SceneManager.LoadScene("Inicio");
         }
         else
         {
-            resultado.text = "Error: " + request.ToString();
+            resultado.text = "Error: El usuario no esta ingresado o la contraseña es incorrecta";
         }
     }
 
