@@ -35,8 +35,8 @@ public class Login : MonoBehaviour
         //....despues de cierto tiempo
         if (request.result == UnityWebRequest.Result.Success)
         {
-            string usuario = request.downloadHandler.text; ;
-            PlayerPrefs.SetString("usuario", usuario);
+            string id_usuario = request.downloadHandler.text; ;
+            PlayerPrefs.SetString("usuario", id_usuario);
             PlayerPrefs.Save(); 
 
             SceneManager.LoadScene("Inicio");
