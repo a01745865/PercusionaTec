@@ -10,7 +10,7 @@ using UnityEngine.UI;
  */
 public class cambionivel : MonoBehaviour
 {
-    public static control_Nivel instance;
+
 
     public int errores = 0;
     public int puntos = 0;
