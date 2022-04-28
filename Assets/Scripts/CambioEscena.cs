@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 
 public class CambioEscena : MonoBehaviour
 {
@@ -53,21 +54,60 @@ public class CambioEscena : MonoBehaviour
     public void LoadSceneNive1_Tambor()
     {
         SceneManager.LoadScene("Tambor");
+        StartCoroutine(EnviarPartidaNivel(1));
     }
 
     public void LoadSceneNivel1_Conga()
     {
         SceneManager.LoadScene("Conga");
+        StartCoroutine(EnviarPartidaNivel(2));
     }
 
     public void LoadSceneNivel1_Maracas()
     {
         SceneManager.LoadScene("Maracas");
+        StartCoroutine(EnviarPartidaNivel(3));
     }
 
     public void LoadSceneNivel1_Xilofono()
     {
         SceneManager.LoadScene("Xilofono");
+        StartCoroutine(EnviarPartidaNivel(4));
     }
 
+    private IEnumerator EnviarPartidaNivel(int nivel)
+    {
+        //Buscar que no haya un Partida Nivel con ese id partida y nivel
+
+        int puntaje = 0;
+        string partida = PlayerPrefs.GetString("idPartida");
+
+        WWWForm formaPartidaNivel = new WWWForm();
+        formaPartidaNivel.AddField("partida", partida);
+        formaPartidaNivel.AddField("nivel", nivel);
+        formaPartidaNivel.AddField("puntaje", puntaje);
+
+        string URLverificarPartNivel = "http://localhost:3000/partida_nivel/"+partida+"/"+nivel;
+        UnityWebRequest requestVerificar = UnityWebRequest.Get(URLverificarPartNivel);
+        yield return requestVerificar.SendWebRequest();
+        if(!(requestVerificar.result == UnityWebRequest.Result.Success))
+        {
+            print("No hay NivelPartida registrado");
+            string URLinsertarPartidaNivel = "http://localhost:3000/partida_nivel" ;
+            UnityWebRequest request = UnityWebRequest.Post(URLinsertarPartidaNivel, formaPartidaNivel);
+            yield return request.SendWebRequest();
+            if (request.result == UnityWebRequest.Result.Success)
+            {
+                print("Se ingreso el PartidaNivel");
+            }
+            else {
+                print("No se ingreso el partida nivel");
+            }
+        }
+        else
+        {
+            print(requestVerificar.downloadHandler.text);
+            print("Ya hay un partida nivel registrado");
+        }
+    }
 }

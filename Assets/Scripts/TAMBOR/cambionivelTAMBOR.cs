@@ -103,6 +103,6 @@ public class cambionivelTAMBOR : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        SceneManager.LoadScene("NivelExitoso");
+        SceneManager.LoadScene("DRUMNivelExitoso");
     }
 }
