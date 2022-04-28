@@ -388,7 +388,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1283706758
+--- !u!1 &586402082
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,22 +396,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1283706760}
-  - component: {fileID: 1283706759}
+  - component: {fileID: 586402084}
+  - component: {fileID: 586402083}
   m_Layer: 0
-  m_Name: FondoXilofono
+  m_Name: FondoXilofonoExplicacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &1283706759
+--- !u!212 &586402083
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283706758}
+  m_GameObject: {fileID: 586402082}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -446,27 +446,27 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: f2bd073f4f622d743af957ac06b6b84a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 82a756b95d0f6be4397157b955cb1580, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 38.88949, y: 25.919998}
+  m_Size: {x: 4.83, y: 3.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1283706760
+--- !u!4 &586402084
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283706758}
+  m_GameObject: {fileID: 586402082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -0, z: 0}
-  m_LocalScale: {x: 0.49554673, y: 0.42085284, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.7059026, y: 3.1258445, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -660,6 +660,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 6916296982719992723, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
+    - target: {fileID: 6916296982719992723, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8690752672722878335, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
     - target: {fileID: 6916296983673524981, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_text
       value: Learn more about xylophone
@@ -839,7 +847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983870389178, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadNivel1_Xilofono
+      value: LoadSceneNivel1_Xilofono
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983870389178, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
