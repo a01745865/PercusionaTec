@@ -10,6 +10,10 @@ public class Login : MonoBehaviour
 {
     public TextMeshProUGUI resultado;
 
+    //Hora de conexion a la partida
+    public string tiempoConecta;
+
+
     //Los datos de entrada
     public TMP_InputField textoUsuario;
     public TMP_InputField textoContrasena;
@@ -35,9 +39,16 @@ public class Login : MonoBehaviour
         //....despues de cierto tiempo
         if (request.result == UnityWebRequest.Result.Success)
         {
+            //Se guarda el id del usuario que ingresó
             string id_usuario = request.downloadHandler.text; ;
             PlayerPrefs.SetString("usuario", id_usuario);
-            PlayerPrefs.Save(); 
+            PlayerPrefs.Save();
+            
+            //Se guarda la hora en que el log in fue aceptado
+            tiempoConecta = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            PlayerPrefs.SetString("hora_conecta_partida", tiempoConecta);
+            PlayerPrefs.Save();
+
             SceneManager.LoadScene("Inicio");
         }
         else
