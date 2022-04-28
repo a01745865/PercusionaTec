@@ -96,7 +96,6 @@ public class cambionivel : MonoBehaviour
                 inicio = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 PlayerPrefs.SetString("inicio_intento", inicio);
                 PlayerPrefs.Save();
-                print(inicio);
             }
         }
 

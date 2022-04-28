@@ -4,6 +4,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Networking;
+
 /*
  * Script que detecta la secuencia correcta
  * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
@@ -72,8 +74,7 @@ public class cambionivelTAMBOR : MonoBehaviour
                 i = i + 1;
                 if (i > 6)
                 {
-                    
-                      
+                    StartCoroutine(RegistroIntento());
                     esperarscene();
                 }
 
@@ -104,5 +105,30 @@ public class cambionivelTAMBOR : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         SceneManager.LoadScene("DRUMNivelExitoso");
+    }
+    private IEnumerator RegistroIntento()
+    {
+        //Se registra el intento de tambor
+        string inicio = PlayerPrefs.GetString("inicio_intento");
+        string idPartNivel = PlayerPrefs.GetString("idPartidaNivel");
+        string final = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+        WWWForm formaRegistraIntento = new WWWForm();
+        formaRegistraIntento.AddField("inicio", inicio);
+        formaRegistraIntento.AddField("final", final);
+        formaRegistraIntento.AddField("idPartNivel", idPartNivel);
+        formaRegistraIntento.AddField("errores", errores);
+
+        string URLRegistroIntento = "http://localhost:3000/partida_nivel_intento";
+        UnityWebRequest requestRegistroIntento = UnityWebRequest.Post(URLRegistroIntento, formaRegistraIntento);
+        yield return requestRegistroIntento.SendWebRequest();
+        if (requestRegistroIntento.result == UnityWebRequest.Result.Success)
+        {
+            print("Se ingreso el intento");
+        }
+        else
+        {
+            print("No se logró ingresar el intento");
+        }
     }
 }

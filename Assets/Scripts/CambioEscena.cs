@@ -81,6 +81,7 @@ public class CambioEscena : MonoBehaviour
 
         int puntaje = 0;
         string partida = PlayerPrefs.GetString("idPartida");
+        string id_partida_nivel;
 
         WWWForm formaPartidaNivel = new WWWForm();
         formaPartidaNivel.AddField("partida", partida);
@@ -92,22 +93,32 @@ public class CambioEscena : MonoBehaviour
         yield return requestVerificar.SendWebRequest();
         if(!(requestVerificar.result == UnityWebRequest.Result.Success))
         {
-            print("No hay NivelPartida registrado");
             string URLinsertarPartidaNivel = "http://localhost:3000/partida_nivel" ;
             UnityWebRequest request = UnityWebRequest.Post(URLinsertarPartidaNivel, formaPartidaNivel);
             yield return request.SendWebRequest();
             if (request.result == UnityWebRequest.Result.Success)
             {
-                print("Se ingreso el PartidaNivel");
-            }
-            else {
-                print("No se ingreso el partida nivel");
+                //Se obtiene el partida nivel
+                string URLobtenerIdPartNivel = "http://localhost:3000/partida_nivel/" + partida + "/" + nivel;
+                UnityWebRequest requestIdPartNivel = UnityWebRequest.Get(URLobtenerIdPartNivel);
+                yield return requestIdPartNivel.SendWebRequest();
+                if (request.result == UnityWebRequest.Result.Success)
+                {
+                    id_partida_nivel = requestIdPartNivel.downloadHandler.text;
+                    //Se guarda en el disco el valor de idPartida
+                    PlayerPrefs.SetString("idPartidaNivel", id_partida_nivel);
+                    PlayerPrefs.Save();
+                }
             }
         }
         else
         {
-            print(requestVerificar.downloadHandler.text);
-            print("Ya hay un partida nivel registrado");
+            id_partida_nivel = requestVerificar.downloadHandler.text;
+            //Se guarda en el disco el valor de idPartida
+            PlayerPrefs.SetString("idPartidaNivel", id_partida_nivel);
+            PlayerPrefs.Save();
         }
+
+        
     }
 }
