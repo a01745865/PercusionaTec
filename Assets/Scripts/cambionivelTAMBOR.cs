@@ -8,9 +8,9 @@ using UnityEngine.UI;
  * Script que detecta la secuencia correcta
  * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
  */
-public class cambionivel : MonoBehaviour
+public class cambionivelTAMBOR : MonoBehaviour
 {
-    public static control_Nivel instance;
+    public static cambionivelTAMBOR instance;
 
     public int errores = 0;
     public int puntos = 0;
@@ -30,14 +30,12 @@ public class cambionivel : MonoBehaviour
 
         patron = new string[10];
         patron[0] = ("S");
-        patron[1] = ("A");
-        patron[2] = ("D");
-        patron[3] = ("A");
+        patron[1] = ("D");
+        patron[2] = ("A");
+        patron[3] = ("D");
         patron[4] = ("D");
         patron[5] = ("A");
         patron[6] = ("D");
-        patron[7] = ("A");
-        patron[8] = ("D");
     }
 
 
@@ -66,7 +64,7 @@ public class cambionivel : MonoBehaviour
                 puntos = puntos + 1;
                 txtPuntos.text = puntos.ToString();
                 i = i + 1;
-                if (i > 8)
+                if (i > 6)
                 {
                         esperarscene();
                 }
@@ -97,6 +95,6 @@ public class cambionivel : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        SceneManager.LoadScene("Tambor2");
+        SceneManager.LoadScene("NivelExitoso");
     }
 }
