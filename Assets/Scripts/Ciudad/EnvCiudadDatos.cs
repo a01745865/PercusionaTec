@@ -26,7 +26,7 @@ public class EnvCiudadDatos : MonoBehaviour
     }
     private IEnumerator DatosPartidas()
     {
-        HoraInicio = CiudadDatos.instancia.tiempoConecta;
+        HoraInicio = PlayerPrefs.GetString("hora_conecta_partida");
         HoraFin = DatosTermino.instancia.HoraTermino;
         usuario = PlayerPrefs.GetString("usuario");
         print(HoraInicio);
