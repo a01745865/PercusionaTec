@@ -16,6 +16,8 @@ public class ManoDer : MonoBehaviour
     //Para el animator
     public bool sonido = false;
 
+    public GameObject der2;
+
     //IsPlaying
     public AudioClip otherClip;
     AudioSource audioSource;
@@ -36,8 +38,10 @@ public class ManoDer : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             sonido = true;
+            animator.SetBool("sonido", sonido);
             audioSource.Play(0);
             visibilidadMano = false;
+            
         }
 
         if (!audioSource.isPlaying)
@@ -46,18 +50,14 @@ public class ManoDer : MonoBehaviour
             //audioSource.Stop();
             if (visibilidadMano == false)
             {
-                gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                der2.SetActive(true);
+                //gameObject.transform.GetChild(0).gameObject.SetActive(true);
                 GetComponent<SpriteRenderer>().enabled = false;
+
+
             }
+            animator.SetBool("sonido", sonido);
         }
-    }
-
-    private void FixedUpdate()
-    {
-        //Animator
-
-        animator.SetBool("sonido", sonido);
-
     }
 
 

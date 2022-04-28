@@ -14,6 +14,8 @@ public class ManoIzq : MonoBehaviour
     //Para el animator
     public bool sonido = false;
 
+    public GameObject izq2;
+
     //IsPlaying
     public AudioClip otherClip;
     AudioSource audioSource;
@@ -34,6 +36,7 @@ public class ManoIzq : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             sonido = true;
+            animator.SetBool("sonido", sonido);
             audioSource.Play(0);
             visibilidadMano = false;
         }
@@ -44,19 +47,12 @@ public class ManoIzq : MonoBehaviour
             //audioSource.Stop();
             if (visibilidadMano == false)
             {
-                gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                izq2.SetActive(true);
+                //gameObject.transform.GetChild(0).gameObject.SetActive(true);
                 GetComponent<SpriteRenderer>().enabled = false;
             }
+            animator.SetBool("sonido", sonido);
         }
-    }
-    
-
-    private void FixedUpdate()
-    {
-        //Animator
-
-        animator.SetBool("sonido", sonido);
-
     }
 
 

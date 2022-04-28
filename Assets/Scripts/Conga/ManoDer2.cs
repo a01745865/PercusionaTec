@@ -19,6 +19,7 @@ public class ManoDer2 : MonoBehaviour
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         audioSource.Stop();
+
     }
 
     private void Update()

@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6916296982287281165, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_Color.a
+      value: 0.54509807
+      objectReference: {fileID: 0}
     - target: {fileID: 6916296982457218238, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_SizeDelta.x
       value: 731.199

@@ -44,12 +44,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NivelesExitosos/DrumNivelExitoso.unity
     guid: 24f2df00616244d49a61dd8b2ab8f69c
-  - enabled: 1
-    path: Assets/Scenes/NivelesExitosos/NivelExitosoConga.unity
-    guid: 1ff26b6149d44d44abaefcc53ac4d670
-  - enabled: 1
-    path: Assets/Scenes/NivelesExitosos/NivelExitosoMaracas.unity
-    guid: f19a9c60f55c4524eb9f0e8a8cd168e9
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/NivelesExitosos/CompletadosNiveles.unity
     guid: f1f6b796416124f1898339fd28316e5c
@@ -83,4 +83,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Conga/Conga.unity
     guid: 202d764aee26149d09f138681fb70d72
+  - enabled: 1
+    path: Assets/Scenes/NivelesExitosos/CongaNivelExitoso.unity
+    guid: 4e02ab16f21828d438c12a706db6ae6c
   m_configObjects: {}

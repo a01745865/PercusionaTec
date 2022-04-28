@@ -26,6 +26,7 @@ public class ManoIzq2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             accion = true;
+            animator.SetBool("accion", accion);
             audioSource.Play(0);
 
         }
@@ -35,6 +36,7 @@ public class ManoIzq2 : MonoBehaviour
             accion = false;
 
         }
+        animator.SetBool("accion", accion);
 
     }
 
