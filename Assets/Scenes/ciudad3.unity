@@ -2711,7 +2711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768467607}
   m_LocalRotation: {x: 0.0018839872, y: -0.99999046, z: 0.00023426258, w: 0.003930116}
-  m_LocalPosition: {x: -2.24, y: -3.22, z: -0.06}
+  m_LocalPosition: {x: 1.59, y: -2.95, z: -0.04}
   m_LocalScale: {x: 0.15, y: 0.14999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3421,30 +3421,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[0]
-      value: 'PercusiSensei: Nice job with the drum sequences.'
+      value: 'Player: Hi, what will be my next challenge???'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[1]
-      value: 'Player: I really like that instrument and I think it was easy, now
-        I am a percussionist.'
+      value: 'PercusiSensei: Hello my friend. I like your energy. Did you learned
+        a lot about the Conga??'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[2]
-      value: 'PercusiSensei: Take it easy my friend, you still have a long way to
-        go. '
+      value: 'Player: Yes, it was easy.'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[3]
-      value: 'Player: What is my next challenge?'
+      value: 'PercusiSensei: Just like your father, a great student who learns quickly.'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[4]
-      value: 'Player: As you remember, your father focused on diversifying his knowledge.
-        So now you wil go to the Conga building.'
+      value: 'PercusiSensei:  Well, now it''s your turn to face a new challenge,
+        the maracas.
+
+        In this level you will learn more about this instrument
+        and some rhythms.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: parrafos.Array.data[5]
+      value: 'Player: Thank you so much PercusiSensei. I will be back'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983533, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_Pivot.x
