@@ -38,4 +38,24 @@ public class CambioEscena : MonoBehaviour
     {
         SceneManager.LoadScene("ExplicacionXilofono");
     }
+
+    public void LoadNivel1_Tambor()
+    {
+        SceneManager.LoadScene("Tambor");
+    }
+
+    public void LoadNivel1_Conga()
+    {
+        SceneManager.LoadScene("Conga");
+    }
+
+    public void LoadNivel1_Maracas()
+    {
+        SceneManager.LoadScene("Maracas");
+    }
+
+    public void LoadNivel1_Xilofono()
+    {
+        SceneManager.LoadScene("Xilofono");
+    }
 }

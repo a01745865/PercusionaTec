@@ -56,4 +56,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tambor/ExplicacionTambor.unity
     guid: e88dfe5142fa6fb4b9cd67cc9ba7d391
+  - enabled: 1
+    path: Assets/Scenes/Xilofono/Xilofono.unity
+    guid: de548c1603e298944ba4e5672e74fd48
+  - enabled: 1
+    path: Assets/Scenes/Maracas/Maracas.unity
+    guid: 8e1200ccbc68b654ea042353c920b668
+  - enabled: 1
+    path: Assets/Scenes/Conga/Conga.unity
+    guid: 202d764aee26149d09f138681fb70d72
   m_configObjects: {}
