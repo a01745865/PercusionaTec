@@ -12,8 +12,8 @@ public class CiudadDatos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tiempoConecta = dateOnly.ToString("MM/dd/yyyy HH:mm");
-        print(tiempoConecta);
+        //tiempoConecta = dateOnly.ToString("MM/dd/yyyy HH:mm");
+        //print(tiempoConecta);
     }
 
     // Update is called once per frame

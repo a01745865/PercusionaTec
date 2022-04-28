@@ -34,6 +34,10 @@ public class cambionivel : MonoBehaviour
         patron[2] = ("D");
         patron[3] = ("A");
         patron[4] = ("D");
+        patron[5] = ("A");
+        patron[6] = ("D");
+        patron[7] = ("A");
+        patron[8] = ("D");
     }
 
 
@@ -62,7 +66,7 @@ public class cambionivel : MonoBehaviour
                 puntos = puntos + 1;
                 txtPuntos.text = puntos.ToString();
                 i = i + 1;
-                if (i > 4)
+                if (i > 8)
                 {
                     esperarscene();
                 }
