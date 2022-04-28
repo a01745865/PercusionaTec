@@ -67,15 +67,7 @@ public class Login : MonoBehaviour
                     PlayerPrefs.SetString("idPartida", id_partida);
                     PlayerPrefs.Save();
                 }
-                else
-                {
-                    print("no se pudo obtener el id partida");
-                }
                     SceneManager.LoadScene("Inicio");
-            }
-            else
-            {
-                print("No se pudo registrar el inicio de partida");
             }
         }
         else

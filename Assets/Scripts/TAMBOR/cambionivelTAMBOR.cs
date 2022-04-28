@@ -122,13 +122,5 @@ public class cambionivelTAMBOR : MonoBehaviour
         string URLRegistroIntento = "http://localhost:3000/partida_nivel_intento";
         UnityWebRequest requestRegistroIntento = UnityWebRequest.Post(URLRegistroIntento, formaRegistraIntento);
         yield return requestRegistroIntento.SendWebRequest();
-        if (requestRegistroIntento.result == UnityWebRequest.Result.Success)
-        {
-            print("Se ingreso el intento");
-        }
-        else
-        {
-            print("No se logró ingresar el intento");
-        }
     }
 }
