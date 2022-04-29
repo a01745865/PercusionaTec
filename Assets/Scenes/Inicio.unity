@@ -855,7 +855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Scores
+  m_text: Log-In
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1581a348a83c4afe966ca5aeed0c138, type: 2}
   m_sharedMaterial: {fileID: 1729617317192935822, guid: a1581a348a83c4afe966ca5aeed0c138, type: 2}
@@ -1157,7 +1157,7 @@ GameObject:
   - component: {fileID: 1458238813}
   - component: {fileID: 1458238812}
   m_Layer: 5
-  m_Name: FondoBotScores
+  m_Name: FondoBotLogin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1541,7 +1541,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1835151339}
         m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
-        m_MethodName: LoadSceneOptions
+        m_MethodName: LoadSceneCreditos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1571,7 +1571,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 099504f5e0a51864b992b8800320147f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3262ee5be33f7e4c8056e8e20b6bdfb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1704,7 +1704,7 @@ GameObject:
   - component: {fileID: 1918161782}
   - component: {fileID: 1918161781}
   m_Layer: 5
-  m_Name: BotScores
+  m_Name: ButtonLogIn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1727,8 +1727,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -147.1, y: -80}
-  m_SizeDelta: {x: 119.3132, y: 109.713}
+  m_AnchoredPosition: {x: -145.29996, y: -80}
+  m_SizeDelta: {x: 81.4722, y: 63.4629}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1918161781
 MonoBehaviour:
@@ -1776,7 +1776,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1835151339}
         m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
-        m_MethodName: LoadSceneScores
+        m_MethodName: LoadSceneLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1806,7 +1806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e20e2df32f174d4c99290761646282b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c78d369807d13294aa60a37e1092dc6e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1882,7 +1882,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Options
+  m_text: Credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1581a348a83c4afe966ca5aeed0c138, type: 2}
   m_sharedMaterial: {fileID: 1729617317192935822, guid: a1581a348a83c4afe966ca5aeed0c138, type: 2}

@@ -6,7 +6,12 @@ using UnityEngine.Networking;
 
 public class CambioEscena : MonoBehaviour
 {
-    //Cambia la escena una vex apretado el boton, el boton va a saber a que escena cambiar?
+    //Cambia la escena una vex apretado el boton, el boton va a saber a que escena cambiar
+
+    public void LoadScenePercusionatec()
+    {
+        SceneManager.LoadScene("Inicio");
+    }
     public void LoadSceneInicio()
     {
         SceneManager.LoadScene("ciudad");
@@ -14,6 +19,10 @@ public class CambioEscena : MonoBehaviour
     public void LoadSceneSelecPerso()
     {
         SceneManager.LoadScene("Selec_personaje");
+    }
+    public void LoadSceneCreditos()
+    {
+        SceneManager.LoadScene("Credits");
     }
     public void LoadSceneCiudad2()
     {

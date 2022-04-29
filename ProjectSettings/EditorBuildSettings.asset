@@ -95,4 +95,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Trofeos/Trofeo2.unity
     guid: ede1c4c7d13424f2d87ccde970898f8d
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 88b4d09cf72cfde438f3bce854797e81
   m_configObjects: {}
