@@ -1,3 +1,4 @@
+using UnityEngine.Networking;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -72,6 +73,7 @@ public class cambionivelMaraca : MonoBehaviour
                     PlayerPrefs.SetInt("puntos", puntos);
                     PlayerPrefs.SetInt("errores", errores);
                     PlayerPrefs.Save(); // Escribe en Disco     
+                    StartCoroutine(RegistroIntento());
                     esperarscene();
                 }
 
@@ -105,5 +107,22 @@ public class cambionivelMaraca : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         SceneManager.LoadScene("MaracasNivelExitoso");
+    }
+    private IEnumerator RegistroIntento()
+    {
+        //Se registra el intento de tambor
+        string inicio = PlayerPrefs.GetString("inicio_intento");
+        string idPartNivel = PlayerPrefs.GetString("idPartidaNivel");
+        string final = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+        WWWForm formaRegistraIntento = new WWWForm();
+        formaRegistraIntento.AddField("inicio", inicio);
+        formaRegistraIntento.AddField("final", final);
+        formaRegistraIntento.AddField("idPartNivel", idPartNivel);
+        formaRegistraIntento.AddField("errores", errores);
+
+        string URLRegistroIntento = "http://localhost:3000/partida_nivel_intento";
+        UnityWebRequest requestRegistroIntento = UnityWebRequest.Post(URLRegistroIntento, formaRegistraIntento);
+        yield return requestRegistroIntento.SendWebRequest();
     }
 }

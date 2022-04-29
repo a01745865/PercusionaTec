@@ -114,14 +114,6 @@ public class CambioEscena : MonoBehaviour
                     PlayerPrefs.SetString("idPartidaNivel", id_partida_nivel);
                     PlayerPrefs.Save();
                 }
-                else
-                {
-                    print("No se que pedo");
-                }
-            }
-            else
-            {
-                print("No se logró ingresar");
             }
         }
         else

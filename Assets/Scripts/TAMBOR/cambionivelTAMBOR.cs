@@ -26,6 +26,7 @@ public class cambionivelTAMBOR : MonoBehaviour
 
     public string[] patron;
 
+    private int AciertosMin = 14;
 
     void Start()
     {
@@ -122,5 +123,14 @@ public class cambionivelTAMBOR : MonoBehaviour
         string URLRegistroIntento = "http://localhost:3000/partida_nivel_intento";
         UnityWebRequest requestRegistroIntento = UnityWebRequest.Post(URLRegistroIntento, formaRegistraIntento);
         yield return requestRegistroIntento.SendWebRequest();
+
+        float score = (AciertosMin / (errores + AciertosMin) * 100);
+        string scoreS = score.ToString();
+        WWWForm formaScore = new WWWForm();
+        formaScore.AddField("score", scoreS);
+
+        string URLactScore = "http://localhost:3000/partida_nivel/" + idPartNivel;
+        UnityWebRequest requestActScore = UnityWebRequest.Post(URLactScore, formaRegistraIntento);
+        yield return requestActScore.SendWebRequest();
     }
 }
