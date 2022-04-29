@@ -28,7 +28,7 @@ public class DetectaTeclas : MonoBehaviour
     {
 
 
-        patron = new string[9];
+        patron = new string[10];
         patron[0] = ("S");
         patron[1] = ("Z");
         patron[2] = ("Z");
@@ -88,6 +88,9 @@ public class DetectaTeclas : MonoBehaviour
             if (patron[i] == "S")
             {
                 i = i + 1;
+                string inicio = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                PlayerPrefs.SetString("inicio_intento", inicio);
+                PlayerPrefs.Save();
             }
         }
 
@@ -104,5 +107,6 @@ public class DetectaTeclas : MonoBehaviour
 
         SceneManager.LoadScene("Conga2");
     }
+
 }
 
