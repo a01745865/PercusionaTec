@@ -124,7 +124,7 @@ public class cambionivelTAMBOR : MonoBehaviour
         UnityWebRequest requestRegistroIntento = UnityWebRequest.Post(URLRegistroIntento, formaRegistraIntento);
         yield return requestRegistroIntento.SendWebRequest();
 
-        float score = (AciertosMin / (errores + AciertosMin)) * 100;
+        double score = ((double)AciertosMin / ((double)errores + (double)AciertosMin))*100;
         string scoreS = score.ToString();
         WWWForm formaScore = new WWWForm();
         formaScore.AddField("score", scoreS);

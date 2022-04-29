@@ -107,7 +107,6 @@ public class CambioEscena : MonoBehaviour
             //Se ingresa los datos de la partida nivel y se evalua que se haya ingresado 
             if (request.result == UnityWebRequest.Result.Success)
             {
-                print("Se ingresa el partida nivel");
                 //Se obtiene el partida nivel
                 string URLobtenerIdPartNivel = "http://localhost:3000/partida_nivel/" + partida + "/" + nivel;
                 UnityWebRequest requestIdPartNivel = UnityWebRequest.Get(URLobtenerIdPartNivel);
@@ -117,14 +116,8 @@ public class CambioEscena : MonoBehaviour
                 { 
                     string id_partida_nivel = requestIdPartNivel.downloadHandler.text;
                     //Se guarda en el disco el valor de idPartida
-                    print("Entra al if");
-                    print(id_partida_nivel);
                     PlayerPrefs.SetString("idPartidaNivel", id_partida_nivel);
                     PlayerPrefs.Save();
-                }
-                else
-                {
-                    print("No entra al if");
                 }
             }
         }
@@ -134,7 +127,6 @@ public class CambioEscena : MonoBehaviour
             //Se guarda en el disco el valor de idPartida
             PlayerPrefs.SetString("idPartidaNivel", id_partida_nivel);
             PlayerPrefs.Save();
-            print(id_partida_nivel);
         }
 
         
