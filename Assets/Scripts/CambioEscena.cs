@@ -72,11 +72,17 @@ public class CambioEscena : MonoBehaviour
         StartCoroutine(EnviarPartidaNivel(3));
     }
 
+    public void LoadSceneLogin()
+    {
+        SceneManager.LoadScene("Log-In");
+    }
+
     public void LoadSceneNivel1_Xilofono()
     {
         SceneManager.LoadScene("Xilofono");
         StartCoroutine(EnviarPartidaNivel(4));
     }
+
 
     private IEnumerator EnviarPartidaNivel(int nivel)
     {
