@@ -11,7 +11,10 @@ public class CambioEscena : MonoBehaviour
     {
         SceneManager.LoadScene("ciudad");
     }
-
+    public void LoadSceneSelecPerso()
+    {
+        SceneManager.LoadScene("Selec_personaje");
+    }
     public void LoadSceneCiudad2()
     {
         SceneManager.LoadScene("ciudad 2");

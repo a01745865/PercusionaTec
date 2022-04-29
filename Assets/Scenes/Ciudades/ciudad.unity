@@ -991,6 +991,7 @@ MonoBehaviour:
   HoraInicio: 
   HoraFin: 
   usuario: 
+  id_partida: 
 --- !u!1 &688690655 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6916296983858983521, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
