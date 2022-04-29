@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DialogoRobot : MonoBehaviour
+public class DR3 : MonoBehaviour
 {
     public TextMeshProUGUI texto;
 
-    [TextArea (4,40)]
+    [TextArea(4, 40)]
     public string[] parrafos;
     int index = 0;
     public float velParrafo;
@@ -20,6 +20,7 @@ public class DialogoRobot : MonoBehaviour
 
     public GameObject botonIncial;
 
+    public int trofeo = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +38,11 @@ public class DialogoRobot : MonoBehaviour
 
     IEnumerator textoDialogo()
     {
-        foreach(char letra in parrafos[index].ToCharArray())
+        foreach (char letra in parrafos[index].ToCharArray())
         {
             texto.text += letra;
             yield return new WaitForSeconds(velParrafo);
-            
+
         }
     }
 
@@ -52,7 +53,7 @@ public class DialogoRobot : MonoBehaviour
 
     public void siguienteParrafo()
     {
-        if(index < parrafos.Length - 1)
+        if (index < parrafos.Length - 1)
         {
             index++;
             texto.text = "";
@@ -92,5 +93,14 @@ public class DialogoRobot : MonoBehaviour
         Time.timeScale = false ? 0 : 1;
         texto.text = "";
         botonIncial.SetActive(true);
+
+    }
+
+    public void sumarTrofeo()
+    {
+        trofeo++;
+        PlayerPrefs.SetInt("trofeo", trofeo);
+        print("Se sumó el trofeo" + trofeo.ToString());
+        PlayerPrefs.Save();
     }
 }
