@@ -84,7 +84,6 @@ public class CambioEscena : MonoBehaviour
 
         int puntaje = 0;
         string partida = PlayerPrefs.GetString("idPartida");
-        string id_partida_nivel;
 
         WWWForm formaPartidaNivel = new WWWForm();
         formaPartidaNivel.AddField("partida", partida);
@@ -94,29 +93,40 @@ public class CambioEscena : MonoBehaviour
         string URLverificarPartNivel = "http://localhost:3000/partida_nivel/"+partida+"/"+nivel;
         UnityWebRequest requestVerificar = UnityWebRequest.Get(URLverificarPartNivel);
         yield return requestVerificar.SendWebRequest();
+        //Evalua que no haya un id part nivel ya ingresado 
         if(!(requestVerificar.result == UnityWebRequest.Result.Success))
         {
             string URLinsertarPartidaNivel = "http://localhost:3000/partida_nivel" ;
             UnityWebRequest request = UnityWebRequest.Post(URLinsertarPartidaNivel, formaPartidaNivel);
             yield return request.SendWebRequest();
+            //Se ingresa los datos de la partida nivel y se evalua que se haya ingresado 
             if (request.result == UnityWebRequest.Result.Success)
             {
                 //Se obtiene el partida nivel
                 string URLobtenerIdPartNivel = "http://localhost:3000/partida_nivel/" + partida + "/" + nivel;
                 UnityWebRequest requestIdPartNivel = UnityWebRequest.Get(URLobtenerIdPartNivel);
                 yield return requestIdPartNivel.SendWebRequest();
-                if (request.result == UnityWebRequest.Result.Success)
-                {
-                    id_partida_nivel = requestIdPartNivel.downloadHandler.text;
+                //Se obtiene el idPartidaNivel
+                if (requestIdPartNivel.result == UnityWebRequest.Result.Success)
+                { 
+                    string id_partida_nivel = requestIdPartNivel.downloadHandler.text;
                     //Se guarda en el disco el valor de idPartida
                     PlayerPrefs.SetString("idPartidaNivel", id_partida_nivel);
                     PlayerPrefs.Save();
                 }
+                else
+                {
+                    print("No se que pedo");
+                }
+            }
+            else
+            {
+                print("No se logró ingresar");
             }
         }
         else
         {
-            id_partida_nivel = requestVerificar.downloadHandler.text;
+            string id_partida_nivel = requestVerificar.downloadHandler.text;
             //Se guarda en el disco el valor de idPartida
             PlayerPrefs.SetString("idPartidaNivel", id_partida_nivel);
             PlayerPrefs.Save();
