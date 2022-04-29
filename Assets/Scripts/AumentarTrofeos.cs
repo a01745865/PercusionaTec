@@ -11,21 +11,29 @@ public class AumentarTrofeos : MonoBehaviour
     public GameObject maracas;
 
 
-    public void masTrofeos()
+    public void Awake()
     {
         int trofeos = PlayerPrefs.GetInt("trofeo");
         switch (trofeos)
         {
-            case 2:
+            case 3:
                 maracas.SetActive(true);
+                congas.SetActive(true);
+                tambor.SetActive(true);
+                print("Maracas");
+                break;
+            case 2:
+                congas.SetActive(true);
+                tambor.SetActive(true);
+                print("Congas" + trofeos.ToString());
                 break;
             case 1:
-                congas.SetActive(true);
+                tambor.SetActive(true);
+                print("Tambor");
                 break;
             case 0:
-                tambor.SetActive(true);
+                print("Nada");
                 break;
-
         }
     }
 

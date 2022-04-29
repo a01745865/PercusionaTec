@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 
 public class CambioEscena : MonoBehaviour
 {
-    //Cambia la escena una vex apretado el boton, el boton va a saber a que escena cambiará
+    //Cambia la escena una vex apretado el boton, el boton va a saber a que escena cambiar?
     public void LoadSceneInicio()
     {
         SceneManager.LoadScene("ciudad");
@@ -83,6 +83,10 @@ public class CambioEscena : MonoBehaviour
         StartCoroutine(EnviarPartidaNivel(4));
     }
 
+    public void LoadSceneTrofeo()
+    {
+        SceneManager.LoadScene("Trofeos");
+    }
 
     private IEnumerator EnviarPartidaNivel(int nivel)
     {
