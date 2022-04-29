@@ -88,6 +88,21 @@ public class CambioEscena : MonoBehaviour
         SceneManager.LoadScene("Trofeos");
     }
 
+    public void LoadSceneTrofeo2()
+    {
+        SceneManager.LoadScene("Trofeo2");
+    }
+
+    public void LoadSceneTrofeo3()
+    {
+        SceneManager.LoadScene("Trofeo3");
+    }
+
+    public void LoadSceneTrofeo4()
+    {
+        SceneManager.LoadScene("Trofeo4");
+    }
+
     private IEnumerator EnviarPartidaNivel(int nivel)
     {
         //Buscar que no haya un Partida Nivel con ese id partida y nivel
