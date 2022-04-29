@@ -745,7 +745,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -761.00024, y: -434.08002}
+  m_AnchoredPosition: {x: -755, y: -423}
   m_SizeDelta: {x: 378.194, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705968948
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: S-Escuchar la secuencia
+  m_text: S- To play the sequence you will learn
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
   m_sharedMaterial: {fileID: -8690752672722878335, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
@@ -1046,10 +1046,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6368aae46b4389f499668e74f280222e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errores: 0
-  puntos: 0
   txtPuntos: {fileID: 860549822}
   txtErrores: {fileID: 860549821}
+  errores: 0
+  puntos: 0
   i: 0
   patron: []
 --- !u!1 &970115504
@@ -2198,7 +2198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -692.7612, y: 254.98688}
+  m_AnchoredPosition: {x: -670, y: 254.98688}
   m_SizeDelta: {x: 534.4717, y: 124.0262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1676278059
@@ -2221,9 +2221,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Felicidades por pasar la secuencia pasada
-
-    Ahora intentemos otra.'
+  m_text: Congratulations in achieving the previous sequence. Now lets try another
+    one!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
   m_sharedMaterial: {fileID: -8690752672722878335, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
