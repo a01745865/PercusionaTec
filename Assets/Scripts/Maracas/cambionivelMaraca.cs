@@ -46,9 +46,9 @@ public class cambionivelMaraca : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.U))
         {
-            if (patron[i] == "A")
+            if (patron[i] == "U")
             {
                 puntos = puntos + 1;
                 txtPuntos.text = puntos.ToString();
@@ -59,16 +59,15 @@ public class cambionivelMaraca : MonoBehaviour
                 errores = errores + 1;
                 txtErrores.text = errores.ToString();
             }
-
         }
-        else if (Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetKeyDown(KeyCode.W))
         {
-            if (patron[i] == "D")
+            if (patron[i] == "W")
             {
                 puntos = puntos + 1;
                 txtPuntos.text = puntos.ToString();
                 i = i + 1;
-                if (i > 8)
+                if (i > 5)
                 {
                     PlayerPrefs.SetInt("puntos", puntos);
                     PlayerPrefs.SetInt("errores", errores);
@@ -105,6 +104,6 @@ public class cambionivelMaraca : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        SceneManager.LoadScene("Tambor2");
+        SceneManager.LoadScene("MaracasNivelExitoso");
     }
 }
