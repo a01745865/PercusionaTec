@@ -190,9 +190,9 @@ PrefabInstance:
       propertyPath: parrafos.Array.data[0]
       value: Congratulations! You have achieved all the levels of the video game,
         now you know more about the principles of the percussion as well as to play
-        the drum, congas, maracas and xylophone. Your father should be so proud of
-        the progress you have achieved. Remember that practice makes perfect, so
-        keep practicing to become an expert.
+        the drum, congas and maracas. Your father should be so proud of the progress
+        you have achieved. Remember that practice makes perfect, so keep practicing
+        to become an expert.
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983533, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_Pivot.x
