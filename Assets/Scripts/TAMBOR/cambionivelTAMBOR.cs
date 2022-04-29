@@ -124,13 +124,13 @@ public class cambionivelTAMBOR : MonoBehaviour
         UnityWebRequest requestRegistroIntento = UnityWebRequest.Post(URLRegistroIntento, formaRegistraIntento);
         yield return requestRegistroIntento.SendWebRequest();
 
-        float score = (AciertosMin / (errores + AciertosMin) * 100);
+        float score = (AciertosMin / (errores + AciertosMin)) * 100;
         string scoreS = score.ToString();
         WWWForm formaScore = new WWWForm();
         formaScore.AddField("score", scoreS);
 
         string URLactScore = "http://localhost:3000/partida_nivel/" + idPartNivel;
-        UnityWebRequest requestActScore = UnityWebRequest.Post(URLactScore, formaRegistraIntento);
+        UnityWebRequest requestActScore = UnityWebRequest.Post(URLactScore, formaScore);
         yield return requestActScore.SendWebRequest();
     }
 }
