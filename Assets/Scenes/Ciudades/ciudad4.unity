@@ -4156,6 +4156,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6916296982457218238, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.43346614
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916296982457218238, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 376.1669
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916296982457218238, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 190.7748
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916296982457218238, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -565
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916296982457218238, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -147.65741
+      objectReference: {fileID: 0}
     - target: {fileID: 6916296982719992723, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -4164,25 +4184,39 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -8690752672722878335, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
+    - target: {fileID: 6916296983673524981, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_text
+      value: Thank your Sensei
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916296983673524981, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916296983673524981, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983521, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_Name
       value: CanvasDialogo
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.size
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[0]
-      value: 'Player: Hi'
+      value: 'Player: Thank you for your help PercuSensei. Now I am as good as my
+        father in percussions.'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[1]
-      value: 'PercusiSensei: Hello'
+      value: 'PercusiSensei: It was my pleasure, I am very happy for you, when you
+        see your father, send him my greetings.'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[2]
-      value: 'Player: I''m tired, how long to become a good percussionist'
+      value: 'Player: Sure, I will.'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[3]
@@ -4290,7 +4324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983870389178, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983870389178, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode

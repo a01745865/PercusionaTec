@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[1]
       value: They are traditionally made of turtle shells with beans but today they
-        can be made out of differente materials like wood, fiber or plastic.
+        can be made out of different materials like wood, fiber or plastic.
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[2]

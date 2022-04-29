@@ -106,7 +106,7 @@ public class cambionivelMaraca : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        SceneManager.LoadScene("MaracasNivelExitoso");
+        SceneManager.LoadScene("CompletadosNiveles");
     }
     private IEnumerator RegistroIntento()
     {
