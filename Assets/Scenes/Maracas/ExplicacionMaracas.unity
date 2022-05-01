@@ -146,6 +146,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 6916296982719992723, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
+    - target: {fileID: 6916296982719992723, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8690752672722878335, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
     - target: {fileID: 6916296983673524981, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_text
       value: Learn more about maracas
