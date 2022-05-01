@@ -642,7 +642,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Trophey
+  m_text: 'Trophies
 
     Room'
   m_isRightToLeft: 0

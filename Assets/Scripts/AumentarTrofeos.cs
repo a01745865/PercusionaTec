@@ -20,18 +20,24 @@ public class AumentarTrofeos : MonoBehaviour
                 maracas.SetActive(true);
                 congas.SetActive(true);
                 tambor.SetActive(true);
-                print("Maracas");
+                print("Maracas" + trofeos.ToString());
                 break;
             case 2:
+                maracas.SetActive(false);
                 congas.SetActive(true);
                 tambor.SetActive(true);
                 print("Congas" + trofeos.ToString());
                 break;
             case 1:
+                maracas.SetActive(false);
+                congas.SetActive(false);
                 tambor.SetActive(true);
-                print("Tambor");
+                print("Tambor" + trofeos.ToString());
                 break;
             case 0:
+                maracas.SetActive(false);
+                congas.SetActive(false);
+                tambor.SetActive(false);
                 print("Nada");
                 break;
         }
