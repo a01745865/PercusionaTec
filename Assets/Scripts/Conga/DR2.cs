@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/*
+ * Script que genera dialogo para finalizar nivel e incrementa en uno a numero de trofeos.
+ * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
+ */
+
 public class DR2 : MonoBehaviour
 {
     public TextMeshProUGUI texto;

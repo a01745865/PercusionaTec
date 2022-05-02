@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
+/*
+ * Script que manda los datos de inicio y fin de una partida a BD.
+ * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
+ */
+
 public class EnvCiudadDatos : MonoBehaviour
 {
     public string HoraInicio;

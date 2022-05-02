@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
+/*
+ * Script que obtiene numero de trofeos al terminar nivel para mostrar cada instrumento.
+ * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
+ */
+
 public class AumentarTrofeos : MonoBehaviour
 {
     public GameObject tambor;

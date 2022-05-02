@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Script que controla movimiento del personaje con las teclas.
+ * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
+ */
+
 public class MuevePersonaje : MonoBehaviour
 {
     //Velocidades

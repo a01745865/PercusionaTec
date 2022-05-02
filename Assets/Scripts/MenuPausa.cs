@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
-     * Autor: Cesar Emiliano Palome Luna
-     * Funcion para pausar
-     */
+ * Script para pausar escenas en el juego.
+ * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
+ */
 
 public class MenuPausa : MonoBehaviour
 {

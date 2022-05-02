@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/*
+ * Script que genera dialogo, tambien incluye sumar trofeos cuando se termina un nivel.
+ * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
+ */
+
 public class DialogoRobot : MonoBehaviour
 {
     public TextMeshProUGUI texto;

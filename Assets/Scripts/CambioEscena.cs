@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 
+/*
+ * Script que cambia a escenas especificas cuando se requiera.
+ * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
+ */
+
 public class CambioEscena : MonoBehaviour
 {
     //Cambia la escena una vex apretado el boton, el boton va a saber a que escena cambiar
