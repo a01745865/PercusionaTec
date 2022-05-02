@@ -2688,7 +2688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Nationality: '
+  m_text: 'Country: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1581a348a83c4afe966ca5aeed0c138, type: 2}
   m_sharedMaterial: {fileID: 1729617317192935822, guid: a1581a348a83c4afe966ca5aeed0c138, type: 2}
@@ -4536,8 +4536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -195, y: -305}
-  m_SizeDelta: {x: 388.75, y: 98.219}
+  m_AnchoredPosition: {x: -271.2549, y: -306.05}
+  m_SizeDelta: {x: 541.2597, y: 100.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667071558
 MonoBehaviour:
