@@ -37,8 +37,8 @@ public class DetectaTeclas : MonoBehaviour
         patron[5] = ("Z");
         patron[6] = ("M");
         patron[7] = ("Z");
-        PlayerPrefs.SetInt("puntos", puntos);
-        PlayerPrefs.SetInt("errores", errores);
+        //PlayerPrefs.SetInt("puntos2", puntos);
+        //PlayerPrefs.SetInt("errores2", errores);
         txtPuntos.text = puntos.ToString();
         txtErrores.text = errores.ToString();
     }
@@ -56,8 +56,8 @@ public class DetectaTeclas : MonoBehaviour
                 i = i + 1;
                 if (i > 7)
                 {
-                    PlayerPrefs.SetInt("puntos", puntos);
-                    PlayerPrefs.SetInt("errores", errores);
+                    PlayerPrefs.SetInt("puntos2", puntos);
+                    PlayerPrefs.SetInt("errores2", errores);
                     PlayerPrefs.Save(); // Escribe en Disco     
                     esperarscene();
                 }

@@ -70,8 +70,8 @@ public class cambionivelMaraca : MonoBehaviour
                 i = i + 1;
                 if (i > 5)
                 {
-                    PlayerPrefs.SetInt("puntos", puntos);
-                    PlayerPrefs.SetInt("errores", errores);
+                    PlayerPrefs.SetInt("puntos3", puntos);
+                    PlayerPrefs.SetInt("errores3", errores);
                     PlayerPrefs.Save(); // Escribe en Disco     
                     StartCoroutine(RegistroIntento());
                     esperarscene();
