@@ -8,11 +8,11 @@ using UnityEngine.UI;
 
 /*
  * Script que detecta la secuencia correcta del tambor
- * Autores: Erika Marlene GarcÃ­a SÃ¡nchez, CÃ©sar Emiliano Palome Luna, Jose Angel Garcia Gomez y JosÃ© Luis Madrigal SÃ¡nchez
+ * Autores: Erika Marlene García Sánchez, César Emiliano Palome Luna, Jose Angel Garcia Gomez y José Luis Madrigal Sánchez
  */
-public class cambionivelMaraca : MonoBehaviour
+public class cambionivelMaraca2 : MonoBehaviour
 {
-    
+
 
     public int errores = 0;
     public int puntos = 0;
@@ -37,8 +37,11 @@ public class cambionivelMaraca : MonoBehaviour
         patron[1] = ("U");
         patron[2] = ("W");
         patron[3] = ("U");
-        patron[4] = ("W");
+        patron[4] = ("U");
         patron[5] = ("W");
+        patron[6] = ("W");
+        patron[7] = ("U");
+        patron[8] = ("W");
         txtPuntos.text = puntos.ToString();
         txtErrores.text = errores.ToString();
     }
@@ -68,7 +71,7 @@ public class cambionivelMaraca : MonoBehaviour
                 puntos = puntos + 1;
                 txtPuntos.text = puntos.ToString();
                 i = i + 1;
-                if (i > 5)
+                if (i > 8)
                 {
                     PlayerPrefs.SetInt("puntos", puntos);
                     PlayerPrefs.SetInt("errores", errores);
@@ -106,7 +109,7 @@ public class cambionivelMaraca : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        SceneManager.LoadScene("Maracas2");
+        SceneManager.LoadScene("CompletadosNiveles");
     }
     private IEnumerator RegistroIntento()
     {

@@ -72,6 +72,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Maracas/Maracas.unity
     guid: 8e1200ccbc68b654ea042353c920b668
   - enabled: 1
+    path: Assets/Scenes/Maracas/Maracas2.unity
+    guid: f6217f8b7618b914594f2a7fd329dfea
+  - enabled: 1
     path: Assets/Scenes/Conga/Conga.unity
     guid: 202d764aee26149d09f138681fb70d72
   - enabled: 1

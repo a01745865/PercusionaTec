@@ -4192,14 +4192,11 @@ PrefabInstance:
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[4]
       value: 'PercusiSensei:  Well, now it''s your turn to face a new challenge,
-        the maracas.
-
-        In this level you will learn more about this instrument
-        and some rhythms.'
+        the maracas.'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[5]
-      value: 'Player: Thank you so much PercusiSensei. I will be back'
+      value: 'Player: Thank you so much PercusiSensei. I am so excited.'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983533, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_Pivot.x

@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: S- To play the sequence you will learn
+  m_text: 'S- To play the sequence you will learn '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 294ba8514cdcb42d79646ac907745793, type: 2}
   m_sharedMaterial: {fileID: -8690752672722878335, guid: 294ba8514cdcb42d79646ac907745793, type: 2}

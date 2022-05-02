@@ -4193,7 +4193,7 @@ PrefabInstance:
     - target: {fileID: 6916296983858983532, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: parrafos.Array.data[4]
       value: 'Player: As you remember, your father focused on diversifying his knowledge.
-        So now you wil go to the Conga building.'
+        So now you will go to the Conga building.'
       objectReference: {fileID: 0}
     - target: {fileID: 6916296983858983533, guid: e03a9ed1d0da81d4aa01ecfc82db6265, type: 3}
       propertyPath: m_Pivot.x
