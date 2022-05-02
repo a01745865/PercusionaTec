@@ -1063,7 +1063,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1542841964}
         m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
-        m_MethodName: LoadSceneNivel1_Xilofono
+        m_MethodName: LoadSceneNivel1_Maracas
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
