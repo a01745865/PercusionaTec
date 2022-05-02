@@ -101,6 +101,6 @@ public class DR2 : MonoBehaviour
         trofeo++;
         PlayerPrefs.SetInt("trofeo", trofeo);
         print("Se sumó el trofeo" + trofeo.ToString());
-        //PlayerPrefs.Save();
+        PlayerPrefs.Save();
     }
 }
