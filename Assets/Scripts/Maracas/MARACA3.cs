@@ -35,7 +35,8 @@ public class MARACA3 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             accion = true;
-            animator.SetBool("accion", accion);
+            //animator.SetBool("accion", accion);
+            animator.SetBool("accion", true);
             audioSource.Play(0);
 
         }
@@ -43,7 +44,8 @@ public class MARACA3 : MonoBehaviour
         if (!audioSource.isPlaying)
         {
             accion = false;
-            animator.SetBool("accion", accion);
+            //animator.SetBool("accion", accion);
+            animator.SetBool("accion", false);
         }
     }
 }

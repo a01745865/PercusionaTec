@@ -36,6 +36,7 @@ public class MARACA2 : MonoBehaviour
         {
             accion = true;
             animator.SetBool("accion", accion);
+            //animator.SetBool("accion", true);
             audioSource.Play(0);
 
         }
@@ -44,7 +45,7 @@ public class MARACA2 : MonoBehaviour
         {
             accion = false;
             animator.SetBool("accion", accion);
-
+            //animator.SetBool("accion", false);
         }
     }
 
