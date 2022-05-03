@@ -442,7 +442,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6916296983963051911}
         m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
-        m_MethodName: LoadSceneLogin
+        m_MethodName: LoadScenePercusionatec
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
