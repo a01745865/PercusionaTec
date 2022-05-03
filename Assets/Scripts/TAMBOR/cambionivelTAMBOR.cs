@@ -75,6 +75,8 @@ public class cambionivelTAMBOR : MonoBehaviour
                 i = i + 1;
                 if (i > 6)
                 {
+                    PlayerPrefs.SetInt("puntos", puntos);
+                    PlayerPrefs.SetInt("errores", errores);
                     StartCoroutine(RegistroIntento());
                     esperarscene();
                 }
