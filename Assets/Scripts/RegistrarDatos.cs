@@ -48,13 +48,13 @@ public class RegistrarDatos : MonoBehaviour
     forma.AddField("fechaNaci", fechaNaci);
     forma.AddField("nacionalidad", nacionalidad);
 
-    string URLverificaJugador = "localhost:3000/jugador/"+usuario;
+    string URLverificaJugador = "https://percusionatec-ge4wk.ondigitalocean.app/jugador/" + usuario;
     UnityWebRequest requestVerif = UnityWebRequest.Get(URLverificaJugador);
     yield return requestVerif.SendWebRequest();
     //....despues de cierto tiempo
     if (!(requestVerif.result == UnityWebRequest.Result.Success))
     {
-        string URLregistroJugador = "localhost:3000/jugador/";
+        string URLregistroJugador = "https://percusionatec-ge4wk.ondigitalocean.app/jugador/";
         UnityWebRequest requestRegistro = UnityWebRequest.Post(URLregistroJugador, forma);
         yield return requestRegistro.SendWebRequest();
         if (requestRegistro.result == UnityWebRequest.Result.Success)

@@ -122,7 +122,7 @@ public class cambionivelTAMBOR : MonoBehaviour
         formaRegistraIntento.AddField("idPartNivel", idPartNivel);
         formaRegistraIntento.AddField("errores", errores);
 
-        string URLRegistroIntento = "http://localhost:3000/partida_nivel_intento";
+        string URLRegistroIntento = "https://percusionatec-ge4wk.ondigitalocean.app/partida_nivel_intento";
         UnityWebRequest requestRegistroIntento = UnityWebRequest.Post(URLRegistroIntento, formaRegistraIntento);
         yield return requestRegistroIntento.SendWebRequest();
 
@@ -131,7 +131,7 @@ public class cambionivelTAMBOR : MonoBehaviour
         WWWForm formaScore = new WWWForm();
         formaScore.AddField("score", scoreS);
 
-        string URLactScore = "http://localhost:3000/partida_nivel/" + idPartNivel;
+        string URLactScore = "https://percusionatec-ge4wk.ondigitalocean.app/partida_nivel/" + idPartNivel;
         UnityWebRequest requestActScore = UnityWebRequest.Post(URLactScore, formaScore);
         yield return requestActScore.SendWebRequest();
     }

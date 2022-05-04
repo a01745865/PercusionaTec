@@ -128,20 +128,20 @@ public class CambioEscena : MonoBehaviour
         formaPartidaNivel.AddField("partida", partida);
         formaPartidaNivel.AddField("nivel", nivel);
         formaPartidaNivel.AddField("puntaje", puntaje);
-        string URLverificarPartNivel = "http://localhost:3000/partida_nivel/"+partida+"/"+nivel;
+        string URLverificarPartNivel = "https://percusionatec-ge4wk.ondigitalocean.app/partida_nivel/" + partida+"/"+nivel;
         UnityWebRequest requestVerificar = UnityWebRequest.Get(URLverificarPartNivel);
         yield return requestVerificar.SendWebRequest();
         //Evalua que no haya un id part nivel ya ingresado 
         if(!(requestVerificar.result == UnityWebRequest.Result.Success))
         {
-            string URLinsertarPartidaNivel = "http://localhost:3000/partida_nivel" ;
+            string URLinsertarPartidaNivel = "https://percusionatec-ge4wk.ondigitalocean.app/partida_nivel";
             UnityWebRequest request = UnityWebRequest.Post(URLinsertarPartidaNivel, formaPartidaNivel);
             yield return request.SendWebRequest();
             //Se ingresa los datos de la partida nivel y se evalua que se haya ingresado 
             if (request.result == UnityWebRequest.Result.Success)
             {
                 //Se obtiene el partida nivel
-                string URLobtenerIdPartNivel = "http://localhost:3000/partida_nivel/" + partida + "/" + nivel;
+                string URLobtenerIdPartNivel = "https://percusionatec-ge4wk.ondigitalocean.app/partida_nivel/" + partida + "/" + nivel;
                 UnityWebRequest requestIdPartNivel = UnityWebRequest.Get(URLobtenerIdPartNivel);
                 yield return requestIdPartNivel.SendWebRequest();
                 //Se obtiene el idPartidaNivel

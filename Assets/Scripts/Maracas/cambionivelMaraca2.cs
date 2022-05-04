@@ -125,7 +125,7 @@ public class cambionivelMaraca2 : MonoBehaviour
         formaRegistraIntento.AddField("idPartNivel", idPartNivel);
         formaRegistraIntento.AddField("errores", errores);
 
-        string URLRegistroIntento = "http://localhost:3000/partida_nivel_intento";
+        string URLRegistroIntento = "https://percusionatec-ge4wk.ondigitalocean.app/partida_nivel_intento";
         UnityWebRequest requestRegistroIntento = UnityWebRequest.Post(URLRegistroIntento, formaRegistraIntento);
         yield return requestRegistroIntento.SendWebRequest();
     }

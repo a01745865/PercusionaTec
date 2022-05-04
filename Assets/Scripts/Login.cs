@@ -33,7 +33,7 @@ public class Login : MonoBehaviour
         WWWForm forma = new WWWForm();
         forma.AddField("usuario", usuario);
         forma.AddField("contrasena", contrasena);
-        string URLinicioSesion = "localhost:3000/jugador/" + usuario + "/" + contrasena;
+        string URLinicioSesion = "https://percusionatec-ge4wk.ondigitalocean.app/jugador/" + usuario + "/" + contrasena;
         UnityWebRequest request = UnityWebRequest.Get(URLinicioSesion);
         yield return request.SendWebRequest();
         //....despues de cierto tiempo
@@ -54,13 +54,13 @@ public class Login : MonoBehaviour
             formaConecta.AddField("usuarioConecta", usuario);
             formaConecta.AddField("tiempoConecta", tiempoConecta);
 
-            string URLDatosConectaPartida = "http://localhost:3000/partidas";
+            string URLDatosConectaPartida = "https://percusionatec-ge4wk.ondigitalocean.app/partidas";
             UnityWebRequest requestConecta = UnityWebRequest.Post(URLDatosConectaPartida,formaConecta);
             yield return requestConecta.SendWebRequest();
             if (requestConecta.result == UnityWebRequest.Result.Success)
             {
                 //Se requiere obtener el Id partida que se ingresó
-                string URLIdPartida = "http://localhost:3000/partidas/" + usuario + "/" + tiempoConecta;
+                string URLIdPartida = "https://percusionatec-ge4wk.ondigitalocean.app/partidas/" + usuario + "/" + tiempoConecta;
                 UnityWebRequest requestIdPartida = UnityWebRequest.Get(URLIdPartida);
                 yield return requestIdPartida.SendWebRequest();
                 if (requestIdPartida.result == UnityWebRequest.Result.Success)

@@ -41,7 +41,7 @@ public class EnvCiudadDatos : MonoBehaviour
         formaDatosTermino.AddField("usuario", usuario);
         formaDatosTermino.AddField("horaTermino", HoraFin);
 
-        string URLactualizarHoraTermino = "http://localhost:3000/partidas/" + id_partida;
+        string URLactualizarHoraTermino = "https://percusionatec-ge4wk.ondigitalocean.app/partidas/" + id_partida;
         UnityWebRequest request = UnityWebRequest.Post(URLactualizarHoraTermino, formaDatosTermino);
         yield return request.SendWebRequest();
     }
