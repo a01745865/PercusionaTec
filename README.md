@@ -10,5 +10,5 @@ To play the final version of our video game you have to download the correspondi
 #### José Luis Madrigal Sánchez - [Github Profile](https://github.com/A01745419)
 #### César Emiliano Palome Luna - [Github Profile](https://github.com/A01746493)
 ## Links to youtube videos
-### [Functionalities of the video game](https://youtu.be/K7pbHrs5uVA)
-### [Functionalities of the website](https://youtu.be/b6c4o1ur8no)
+#### [Functionalities of the video game](https://youtu.be/K7pbHrs5uVA)
+#### [Functionalities of the website](https://youtu.be/b6c4o1ur8no)
