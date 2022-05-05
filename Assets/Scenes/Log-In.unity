@@ -2460,7 +2460,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1742634031}
         m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
-        m_MethodName: LoadScenePercusionatec
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2701,7 +2701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Inicial Menu
+  m_text: Exit Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1581a348a83c4afe966ca5aeed0c138, type: 2}
   m_sharedMaterial: {fileID: 1729617317192935822, guid: a1581a348a83c4afe966ca5aeed0c138, type: 2}
