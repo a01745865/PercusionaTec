@@ -9,7 +9,7 @@ To play the final version of our video game you have to download the correspondi
 ## Link to Google Drive where is the APP for Windows
 #### [PercusionaTec.exe](https://drive.google.com/file/d/1ZCGqjZfRidCOlo1D1C2wylHjZ7kUs0td/view?usp=sharing)
 ## Link to Google Drive where is the APP for MacOS
-#### [PercusionaTec.app](https://drive.google.com/file/d/1iuNNGKIwVKcYLSNhXtEi_S63kfqe0no1/view?usp=sharing)
+#### [PercusionaTec.app](https://drive.google.com/file/d/1cPsk4lksYeXNgkASDDuCV_qqig6Fl8os/view?usp=sharing)
 ## Links to youtube videos
 #### [Functionalities of the video game](https://youtu.be/K7pbHrs5uVA)
 #### [Functionalities of the website](https://youtu.be/b6c4o1ur8no)
