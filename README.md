@@ -9,7 +9,7 @@ To play the final version of our video game you have to download the correspondi
 #### José Ángel García Gómez - [Github Profile](https://github.com/a01745865)
 #### José Luis Madrigal Sánchez - [Github Profile](https://github.com/A01745419)
 #### César Emiliano Palome Luna - [Github Profile](https://github.com/A01746493)
-## Link to drive where is the APP for Macos
+## Link to Google Drive where is the APP for MacOS
 #### [PercusionaTec.app](https://drive.google.com/file/d/1iuNNGKIwVKcYLSNhXtEi_S63kfqe0no1/view?usp=sharing)
 ## Links to youtube videos
 #### [Functionalities of the video game](https://youtu.be/K7pbHrs5uVA)
