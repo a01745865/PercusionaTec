@@ -3,7 +3,7 @@
 ## Group 402 - CEM - Team 5
 This video game was developed using Unity (Editor Version: 2021.2.11f1) on Windows and Mac.
 ## Executable for Windows and Mac
-To play the final version of our video game you have to download the corresponding folder dependingo on your operating system, we currently support Windows and MacOS. You can find this folder in the section of link to google drive. You should run the corresponding executable aplication in your machine, windows .exe and Mac .app 
+To play the final version of our video game you have to download the corresponding zip file depending on your operating system, we currently support Windows and MacOS. You can find the files down here, in the sections link to google drive. You should run the corresponding executable aplication in your machine, Windows .exe and Mac .app 
 ## Link to the Github Repository of the API
 #### [PercusionaTecAPI](https://github.com/a01745865/PercusionatecAPI)
 ## Link to Google Drive where is the APP for Windows
