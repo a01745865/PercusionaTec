@@ -2387,7 +2387,7 @@ GameObject:
   - component: {fileID: 1790073658}
   - component: {fileID: 1790073657}
   m_Layer: 5
-  m_Name: ButtonInicio
+  m_Name: ButtonTerminar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2701,7 +2701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit Game
+  m_text: Quit Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1581a348a83c4afe966ca5aeed0c138, type: 2}
   m_sharedMaterial: {fileID: 1729617317192935822, guid: a1581a348a83c4afe966ca5aeed0c138, type: 2}
