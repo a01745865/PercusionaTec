@@ -6,6 +6,8 @@ This video game was developed using Unity (Editor Version: 2021.2.11f1) on Windo
 To play the final version of our video game you have to download the corresponding folder dependingo on your operating system, we currently support Windows and MacOS. You can find this folder inside the main folder thtat is called "exe". You should run the corresponding executable aplication in your machine 
 ## Link to the Github Repository of the API
 #### [PercusionaTecAPI](https://github.com/a01745865/PercusionatecAPI)
+## Link to Google Drive where is the APP for Windows
+#### [PercusionaTec.exe](https://drive.google.com/file/d/1ZCGqjZfRidCOlo1D1C2wylHjZ7kUs0td/view?usp=sharing)
 ## Link to Google Drive where is the APP for MacOS
 #### [PercusionaTec.app](https://drive.google.com/file/d/1iuNNGKIwVKcYLSNhXtEi_S63kfqe0no1/view?usp=sharing)
 ## Links to youtube videos
