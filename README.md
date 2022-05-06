@@ -2,8 +2,6 @@
  Interactive video game developed for PAS where the main goal is to teach the basics of percussion.
 ## Group 402 - CEM - Team 5
 This video game was developed using Unity (Editor Version: 2021.2.11f1) on Windows and Mac.
-## Executable for Windows and Mac
-To play the final version of our video game you have to download the corresponding zip file depending on your operating system, we currently support Windows and MacOS. You can find the files down here, in the sections link to google drive. You should run the corresponding executable aplication in your machine, Windows .exe and Mac .app 
 ## Link to the Github Repository of the API
 #### [PercusionaTecAPI](https://github.com/a01745865/PercusionatecAPI)
 ## Link to Google Drive where is the APP for Windows
